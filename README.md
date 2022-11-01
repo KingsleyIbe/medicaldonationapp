@@ -6,7 +6,7 @@ This is a medical application which allows registered users (patients) to find a
 Project Repo:
 [View Here](https://github.com/KingsleyIbe/medicaldonationapp)
  
-# [Live Demo](https://prudenceconcept.com/)
+# [Live Demo](https://kingsleyibe.github.io/medicaldonationapp/)
  
 # Demo Account
  

@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.9fc0de16.css",
-    "main.js": "/static/js/main.c581e399.js",
-    "static/js/787.99a484e9.chunk.js": "/static/js/787.99a484e9.chunk.js",
-    "static/media/pageCover.jpg": "/static/media/pageCover.098f0ae2fdefa35e4905.jpg",
-    "service-worker.js": "/service-worker.js",
-    "static/media/authpics.jpg": "/static/media/authpics.5d9e09641aa7f2edc2b5.jpg",
-    "static/media/siteLogo.png": "/static/media/siteLogo.ad5ab15f6693b0aab758.png",
-    "index.html": "/index.html",
-    "main.9fc0de16.css.map": "/static/css/main.9fc0de16.css.map",
-    "main.c581e399.js.map": "/static/js/main.c581e399.js.map",
-    "787.99a484e9.chunk.js.map": "/static/js/787.99a484e9.chunk.js.map"
+    "main.css": "/medicaldonationapp/static/css/main.e9534faf.css",
+    "main.js": "/medicaldonationapp/static/js/main.d98110b2.js",
+    "static/js/787.99a484e9.chunk.js": "/medicaldonationapp/static/js/787.99a484e9.chunk.js",
+    "static/media/pageCover.jpg": "/medicaldonationapp/static/media/pageCover.098f0ae2fdefa35e4905.jpg",
+    "service-worker.js": "/medicaldonationapp/service-worker.js",
+    "static/media/authpics.jpg": "/medicaldonationapp/static/media/authpics.5d9e09641aa7f2edc2b5.jpg",
+    "static/media/siteLogo.png": "/medicaldonationapp/static/media/siteLogo.ad5ab15f6693b0aab758.png",
+    "index.html": "/medicaldonationapp/index.html",
+    "main.e9534faf.css.map": "/medicaldonationapp/static/css/main.e9534faf.css.map",
+    "main.d98110b2.js.map": "/medicaldonationapp/static/js/main.d98110b2.js.map",
+    "787.99a484e9.chunk.js.map": "/medicaldonationapp/static/js/787.99a484e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9fc0de16.css",
-    "static/js/main.c581e399.js"
+    "static/css/main.e9534faf.css",
+    "static/js/main.d98110b2.js"
   ]
 }
