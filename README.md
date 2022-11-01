@@ -52,28 +52,28 @@ To get a local copy up and running follow these simple steps.
  
 👤 **Kingsley Ibe**
  
-- GitHub: [KingsleyIbe](https://github.com/KingsleyIbe)
-- Twitter: [Twitter](https://twitter.com/ibekingsley2)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/kingsley-ibe/)
+- [Github](https://github.com/KingsleyIbe)
+- [Twitter](https://twitter.com/ibekingsley2)
+- [LinkedIn](https://www.linkedin.com/in/kingsley-ibe/)
  
  
  👤 Michael David**
  
-- [GitHub](https://github.com/Anny85-code)
-- [LinkedIn](https://www.linkedin.com/in/aniekan-udo)
-- [Twitter](https://www.linkedin.com/in/aniekan-udo)
+- [Github](https://github.com/KingsleyIbe)
+- [Twitter](https://twitter.com/ibekingsley2)
+- [LinkedIn](https://www.linkedin.com/in/kingsley-ibe/)
  
 👤 Josephine Bonka
  
-- GitHub: (https://github.com/aizuanjeme)
-- Twitter: (https://github.com/aizuanjeme)
-- LinkedIn: (https://www.linkedin.com/in/stephanie-ademuyiwa/)
+- [Github](https://github.com/KingsleyIbe)
+- [Twitter](https://twitter.com/ibekingsley2)
+- [LinkedIn](https://www.linkedin.com/in/kingsley-ibe/)
 
 👤 Adio Usman
  
-- GitHub: (https://www.linkedin.com/in/heistejiri)
-- Twitter: (https://www.linkedin.com/in/heistejiri)
-- LinkedIn: (https://www.linkedin.com/in/heistejiri)
+- [Github](https://github.com/KingsleyIbe)
+- [Twitter](https://twitter.com/ibekingsley2)
+- [LinkedIn](https://www.linkedin.com/in/kingsley-ibe/)
  
  
 ## 🤝 Contributing
