@@ -1,5 +1,6 @@
 {
   "name": "bloodbankapp-frontend",
+  "homepage": "https://kingsleyibe.github.io/medicaldonationapp/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
