@@ -3,14 +3,14 @@ import siteLogo from '../../assets/images/siteLogo.png';
 const NavItems = [
   {
     logo: siteLogo,
-    alt: 'Prudence Concept Logo',
+    alt: 'Site Logo',
     link: [
       '/',
       '/login',
       '/register',
     ],
     title: [
-      'Blood Bank App',
+      'Life Force',
       'Login',
       'Register',
     ],
