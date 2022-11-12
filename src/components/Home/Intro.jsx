@@ -6,7 +6,7 @@ import organ1 from '../../assets/images/organ1.png';
 import lock1 from '../../assets/images/lock1.png';
 
 const Intro = () => (
-  <div>
+  <div className="text-[#5c0e0e]">
     <div>
       <img src={PageCover} alt="Page cover" className="w-[100%] h-[70%]" />
     </div>

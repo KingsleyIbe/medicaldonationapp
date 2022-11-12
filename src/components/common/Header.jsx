@@ -10,7 +10,7 @@ const Header = () => {
   });
 
   return (
-    <header className="text-[#fff] z-50 fixed">
+    <header className="text-[#fff]">
       <div className="bg-[#A00] p-5">
         <nav className="">
           {data.map((navItem) => (
