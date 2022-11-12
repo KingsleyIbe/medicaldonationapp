@@ -1,17 +1,21 @@
 {
   "files": {
-    "main.css": "/medicaldonationapp/static/css/main.e9534faf.css",
-    "main.js": "/medicaldonationapp/static/js/main.8eba4abf.js",
-    "static/media/pageCover.jpg": "/medicaldonationapp/static/media/pageCover.098f0ae2fdefa35e4905.jpg",
+    "main.css": "/medicaldonationapp/static/css/main.8b147441.css",
+    "main.js": "/medicaldonationapp/static/js/main.e3fce824.js",
+    "static/media/home1.png": "/medicaldonationapp/static/media/home1.217521d79cc2bddf4bc4.png",
+    "static/media/patient1.png": "/medicaldonationapp/static/media/patient1.4c54d310075c96c886a8.png",
     "service-worker.js": "/medicaldonationapp/service-worker.js",
+    "static/media/organ1.png": "/medicaldonationapp/static/media/organ1.5a8b1fbf278b7354e159.png",
+    "static/media/better11.png": "/medicaldonationapp/static/media/better11.bb1b49a6a5d07e1b346e.png",
     "static/media/authpics.jpg": "/medicaldonationapp/static/media/authpics.5d9e09641aa7f2edc2b5.jpg",
+    "static/media/lock1.png": "/medicaldonationapp/static/media/lock1.4d1f9a7ad31bab08b7b7.png",
     "static/media/siteLogo.png": "/medicaldonationapp/static/media/siteLogo.ad5ab15f6693b0aab758.png",
     "index.html": "/medicaldonationapp/index.html",
-    "main.e9534faf.css.map": "/medicaldonationapp/static/css/main.e9534faf.css.map",
-    "main.8eba4abf.js.map": "/medicaldonationapp/static/js/main.8eba4abf.js.map"
+    "main.8b147441.css.map": "/medicaldonationapp/static/css/main.8b147441.css.map",
+    "main.e3fce824.js.map": "/medicaldonationapp/static/js/main.e3fce824.js.map"
   },
   "entrypoints": [
-    "static/css/main.e9534faf.css",
-    "static/js/main.8eba4abf.js"
+    "static/css/main.8b147441.css",
+    "static/js/main.e3fce824.js"
   ]
 }
