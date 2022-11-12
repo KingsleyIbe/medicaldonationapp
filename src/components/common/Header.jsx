@@ -22,9 +22,6 @@ const Header = () => {
               <ul className="flex gap-5 items-center absolute right-0">
                 <li className="hover:text-[#FFC01D]"><NavLink to={navItem.link[1]} style={navLinksStyles}>{navItem.title[1]}</NavLink></li>
                 <li className="hover:text-[#FFC01D]"><NavLink to={navItem.link[2]} style={navLinksStyles}>{navItem.title[2]}</NavLink></li>
-                <li className="hover:text-[#FFC01D]"><NavLink to={navItem.link[3]} style={navLinksStyles}>{navItem.title[3]}</NavLink></li>
-                <li className="hover:text-[#FFC01D]"><NavLink to={navItem.link[4]} style={navLinksStyles}>{navItem.title[4]}</NavLink></li>
-                <li className="hover:text-[#FFC01D]"><NavLink to={navItem.link[5]} style={navLinksStyles}>{navItem.title[5]}</NavLink></li>
               </ul>
 
             </div>
