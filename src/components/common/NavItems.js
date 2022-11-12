@@ -6,17 +6,11 @@ const NavItems = [
     alt: 'Prudence Concept Logo',
     link: [
       '/',
-      '/donor',
-      '/patient',
-      '/dashboard',
       '/login',
       '/register',
     ],
     title: [
       'Blood Bank App',
-      'Donor',
-      'Patient',
-      'Profile',
       'Login',
       'Register',
     ],
