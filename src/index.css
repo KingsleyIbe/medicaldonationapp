@@ -16,3 +16,21 @@ body {
   overflow-x: hidden;
   font-family: 'Red Rose', Courier, monospace;
 }
+
+.register-input-bolder {
+  border: 1px solid rgb(211, 208, 208);
+  border-radius: 4px;
+}
+
+input::placeholder {
+  border: none;
+  font-size: 14px;
+}
+
+.border-right {
+  border-right: 1px solid #ccc;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #ccc;
+}
