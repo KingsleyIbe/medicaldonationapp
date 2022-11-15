@@ -1,5 +1,7 @@
 import { Link, NavLink } from 'react-router-dom';
 import { v4 as uuidv4 } from 'uuid';
+import LoginButton from '../user/LoginButton';
+import LogoutButton from '../user/LogoutButton';
 import NavItems from './NavItems';
 
 const Header = () => {
@@ -28,6 +30,8 @@ const Header = () => {
 
           ))}
         </nav>
+        <LoginButton />
+        <LogoutButton />
       </div>
     </header>
   );
