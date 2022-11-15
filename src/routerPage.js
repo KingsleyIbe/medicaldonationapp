@@ -7,12 +7,14 @@ import { Route, Routes } from 'react-router-dom';
 // import Dashboard from './pages/dashboard/Dashboard';
 // import DonorPage from './pages/Donor/DonorPage';
 import LandingPage from './pages/landingPage/landingPage';
+import KYCPage from './pages/user/KYCPage';
 // import PatientPage from './pages/Patient/PatientPage';
 
 const RouterPage = () => (
   <>
     <Routes>
       <Route path="/" element={<LandingPage />} />
+      <Route exact path="/kyc" element={<KYCPage />} />
       {/* <Route exact path="/login" element={<Login />} />
       <Route exact path="/register" element={<Register />} />
       <Route exact path="/dashboard" element={<Dashboard />} />
