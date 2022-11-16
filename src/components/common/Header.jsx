@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import LoginButton from '../user/LoginButton';
-import LogoutButton from '../user/LogoutButton';
 import Logo from '../../assets/images/logo.png';
 
 const Header = () => (
@@ -14,10 +13,6 @@ const Header = () => (
           </Link>
           <ul className="flex gap-5 items-center absolute right-0">
             <li className="hover:text-[#FFC01D]"><LoginButton /></li>
-            <li className="hover:text-[#FFC01D]">
-              <LogoutButton />
-              {' '}
-            </li>
           </ul>
 
         </div>
