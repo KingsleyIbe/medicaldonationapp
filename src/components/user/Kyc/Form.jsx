@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useAuth0 } from '@auth0/auth0-react';
 import { useQuery } from '@tanstack/react-query';
 import Axios from 'axios';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -8,6 +9,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 
 const Form = () => {
+  const { user, isAuthenticated } = useAuth0();
   const [number, setNumber] = useState('');
 
   const num = 'AA1234567890123B';
@@ -36,9 +38,13 @@ const Form = () => {
       {' '}
       <div className="mt-[50px]">
         <header>
-          <h1 className="text-[35px] font-bold text-center">
-            Hello,
-          </h1>
+          {isAuthenticated && (
+            <h1 className="text-[35px] font-bold text-center">
+              Hello,
+              {' '}
+              {user?.name}
+            </h1>
+          )}
           <p className="text-[18px] font-semibold opacity-[0.6] text-center w-[100%] lg:max-w-[50%] m-auto">To use Life Force, you are required to perform a KYC, Fill the form below to proceed</p>
         </header>
       </div>
