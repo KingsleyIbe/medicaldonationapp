@@ -10,28 +10,41 @@ import {
 
 const Form = () => {
   const { user, isAuthenticated } = useAuth0();
-  const [number, setNumber] = useState('');
+  const [nin, setNumber] = useState('');
+  const [data, setData] = useState([]);
+  const [verified, setVerified] = useState(false);
 
-  const num = 'AA1234567890123B';
+  const num = {
+    number: nin,
+  };
+  console.log(nin);
+  // 'AA1234567890123B'
 
   const url = process.env.REACT_APP_API_URL_NIN;
   const apiKey = 'test_ucc8c5fyl6rl78idn3lqjp:ogINip3R6hrzzARkTI42vv13ybY';
   const appId = 'e9265dad-9424-420c-8290-e0b19a7944d7';
-
-  // console.log(number);
 
   const headers = {
     'app-id': appId,
     'x-api-key': apiKey,
     'Content-Type': 'application/json',
   };
-  const { data, isLoading, isError } = useQuery(['user'], () => {
-    Axios.post(url, num, { headers }).then((res) => res.data);
+  const { isLoading, isError } = useQuery(['user'], () => {
+    Axios.post(url, num, { headers }).then((res) => setData(res.data));
   });
-  console.log(data);
   if (isError) (<h1>Sorry, Something went wrong!</h1>);
 
   if (isLoading) (<h1>Loading...</h1>);
+
+  const handleVerification = () => {
+    if (data.status === true) {
+      setVerified(!verified);
+      console.log(`${nin}n`);
+      console.log(data.status);
+    } else {
+      setVerified(false);
+    }
+  };
 
   return (
     <>
@@ -60,10 +73,10 @@ const Form = () => {
           </label>
           <label htmlFor="vnin" className="input-active-border register-input-bolder flex flex-row gap-4 items-center my-5 p-2">
             <FontAwesomeIcon icon={faLock} className="opacity-[0.2]" />
-            <input type="number" placeholder="Enter Virtual NIN" value={number} onInput={(e) => setNumber(e.target.value)} className="w-[100%]" />
+            <input type="text" placeholder="Enter Virtual NIN" value={nin} onInput={(e) => setNumber(e.target.value)} className="w-[100%]" />
           </label>
           <div className="flex flex-col items-center justify-center my-5 p-2">
-            <button type="button" className="rounded-[8px] px-[21px] py-[12px] bg-[#4e0f0f] w-[100%] text-[#fff]">Continue</button>
+            <button onClick={handleVerification} type="button" className="rounded-[8px] px-[21px] py-[12px] bg-[#4e0f0f] w-[100%] text-[#fff]">Continue</button>
           </div>
         </form>
         <div className="flex flex-row items-center gap-2 justify-between p-10">
