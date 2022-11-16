@@ -15,6 +15,7 @@ const RouterPage = () => (
     <Routes>
       <Route path="/" element={<LandingPage />} />
       <Route exact path="/kyc" element={<KYCPage />} />
+      <Route exact path="*" element={<h1>PAGE NOT FOUND</h1>} />
       {/* <Route exact path="/login" element={<Login />} />
       <Route exact path="/register" element={<Register />} />
       <Route exact path="/dashboard" element={<Dashboard />} />

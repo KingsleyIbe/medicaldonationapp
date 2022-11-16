@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../../common/Header';
 // import KYC from './KYC';
-import Title from './Title';
+// import Title from './Title';
 import Form from './Form';
 
 const UserKYC = () => (
@@ -9,7 +9,7 @@ const UserKYC = () => (
     <Header />
     {/* <KYC /> */}
     <div className="flex flex-col justify-center items-center">
-      <Title />
+      {/* <Title /> */}
       <Form />
     </div>
   </div>
