@@ -1,11 +1,8 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDoubleLeft } from '@fortawesome/free-solid-svg-icons';
-import DonateBlood from '../profile/DonateBlood';
-import BloodRequest from '../profile/BloodRequest';
-import DonationHistory from '../profile/DonationHistory';
-import RequestHistory from '../profile/RequestHistory';
 import Logo from '../../../assets/images/logo.png';
+import LogoutButton from '../LogoutButton';
 
 const SideBar = () => {
   const [open, setOpen] = useState(true);
@@ -86,15 +83,10 @@ const SideBar = () => {
                 <p>Request History</p>
               </button>
             </li>
+            <li><LogoutButton /></li>
           </ul>
         </nav>
       </header>
-      <section>
-        {isDonate && (<DonateBlood />)}
-        {isBloodRequest && (<BloodRequest />)}
-        {isDonationHistory && (<DonationHistory />)}
-        {isRequestHistory && (<RequestHistory />)}
-      </section>
     </div>
   );
 };
