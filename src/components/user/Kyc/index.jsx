@@ -8,7 +8,7 @@ const UserKYC = () => (
   <div>
     <Header />
     {/* <KYC /> */}
-    <div className="flex flex-col justify-center items-center">
+    <div className="flex flex-col justify-center items-center px-5 lg:px-0">
       {/* <Title /> */}
       <Form />
     </div>
