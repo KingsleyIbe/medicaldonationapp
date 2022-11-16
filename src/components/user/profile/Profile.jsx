@@ -7,10 +7,10 @@ const Profile = () => {
   const { user, isAuthenticated } = useAuth0();
   return (
     isAuthenticated && (
-      <article>
+      <article className="ml-200px flex flex-col items-center justify-center">
         {user?.picture && <img src={user?.picture} alt={user?.name} />}
         <h2>{user?.name}</h2>
-        <ul>
+        <ul className="flex flex-col items-center justify-center">
           {Object.keys(user).map((objKey, i) => (
             <li key={i}>
               {objKey}
