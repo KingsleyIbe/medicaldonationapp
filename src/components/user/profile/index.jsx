@@ -1,6 +1,6 @@
 import { useAuth0 } from '@auth0/auth0-react';
 import Header from '../../common/Header';
-import SideBar from './SideBar';
+import SideBar from '../dashboard/SideBar';
 import Profile from './Profile';
 
 const UserProfile = () => {

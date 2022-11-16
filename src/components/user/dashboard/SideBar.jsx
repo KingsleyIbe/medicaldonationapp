@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDoubleLeft } from '@fortawesome/free-solid-svg-icons';
-import DonateBlood from './DonateBlood';
-import BloodRequest from './BloodRequest';
-import DonationHistory from './DonationHistory';
-import RequestHistory from './RequestHistory';
+import DonateBlood from '../profile/DonateBlood';
+import BloodRequest from '../profile/BloodRequest';
+import DonationHistory from '../profile/DonationHistory';
+import RequestHistory from '../profile/RequestHistory';
+import Logo from '../../../assets/images/logo.png';
 
 const SideBar = () => {
   const [open, setOpen] = useState(true);
@@ -56,7 +57,8 @@ const SideBar = () => {
             }`}
             onClick={() => setOpen(!open)}
           />
-          <ul className="text-[#fff] mt-[100px]">
+          <ul className="text-[#fff]">
+            <li><img src={Logo} alt="Logo" className="max-w-[50px] m-auto mb-[100px]" /></li>
             <li>
               <button type="button" onClick={openDonate} className="flex gap-5 items-center">
                 <FontAwesomeIcon icon={faAngleDoubleLeft} />
