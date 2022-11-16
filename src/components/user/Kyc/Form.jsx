@@ -20,9 +20,14 @@ const Form = () => {
     'Content-Type': 'application/json',
   };
 
-  const { data } = useQuery(['user'], () => {
+  const { data, isLoading, isError } = useQuery(['user'], () => {
     Axios.post(url, number, { headers }).then((res) => res.data);
   });
+
+  if (isError) (<h1>Sorry, Something went wrong!</h1>);
+
+  if (isLoading) (<h1>Loading...</h1>);
+
   return (
     <>
       {' '}
