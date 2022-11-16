@@ -47,7 +47,7 @@ const SideBar = () => {
       <header className="flex fixed z-10">
         <nav
           className={`${open ? 'w-60' : 'w-0'} 
-        h-screen p-5 pt-8 bg-[#1B1C22] duration-300 z-1 relative`}
+        h-screen p-5 pt-8 bg-[#17a2b8] duration-300 z-1 relative`}
         >
           <FontAwesomeIcon
             icon={faAngleDoubleLeft}
