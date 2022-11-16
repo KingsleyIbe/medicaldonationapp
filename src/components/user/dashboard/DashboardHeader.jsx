@@ -13,7 +13,7 @@ const DashboardHeader = () => (
       <div className="flex flex-row gap-10 items-center mr-10">
         <div className="flex flex-row gap-10 items-center">
           <FontAwesomeIcon icon={faBell} className="text-[#A03] text-[20px]" />
-          <FontAwesomeIcon icon={faMessage} className="text-[#A03] text-[20px]" />
+          <FontAwesomeIcon icon={faMessage} className="text-[#17a2b8] text-[20px]" />
         </div>
         <div className="flex flex-row gap-2 items-center">
           <img src={Logo} alt="Profile" className="max-w-[20px]" />
