@@ -38,10 +38,10 @@ const Form = () => {
             {' '}
             {data?.name}
           </h1>
-          <p className="text-[18px] font-semibold opacity-[0.6] text-center max-w-[50%] m-auto">To use Life Force, you are required to perform a KYC, Fill the form below to proceed</p>
+          <p className="text-[18px] font-semibold opacity-[0.6] text-center w-[100%] lg:max-w-[50%] m-auto">To use Life Force, you are required to perform a KYC, Fill the form below to proceed</p>
         </header>
       </div>
-      <div className="mt-5 w-[50%] border border-1-solid rounded-[8px]">
+      <div className="mt-5 w-[100%] lg:w-[50%] border border-1-solid rounded-[8px]">
         <form className="p-10">
           <label htmlFor="firstName" className="input-active-border register-input-bolder flex flex-row gap-4 items-center my-5 p-2">
             <FontAwesomeIcon icon={faUser} className="opacity-[0.2]" />
