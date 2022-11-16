@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import DonationForm from './DonationForm';
 
 const DonationCard = () => {
-
   const [open, setOpen] = useState(false);
 
   const openModal = () => {

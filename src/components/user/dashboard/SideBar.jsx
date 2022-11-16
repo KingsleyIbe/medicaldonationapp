@@ -51,7 +51,7 @@ const SideBar = () => {
         >
           <FontAwesomeIcon
             icon={faAngleDoubleLeft}
-            className={`bg-[#14142B] text-[#fff] rounded-full -right-3 border-dark-purple 
+            className={`bg-[#A03] text-[#fff] rounded-full -right-3 border-dark-purple 
             absolute cursor-pointer top-9 w-7 border-2 ${
               !open && 'rotate-[180]'
             }`}
