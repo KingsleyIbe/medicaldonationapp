@@ -58,7 +58,7 @@ const DonationForm = () => (
       </div>
     </form>
     <div className="mt-2 opacity-[0.8]">
-      <p>By continuing, you agree to Inyeaka&#39;s</p>
+      <p>By continuing, you agree to Life Force&#39;s</p>
       <Link to="/privacy-policy">Terms of Service and Privacy Police</Link>
     </div>
   </div>

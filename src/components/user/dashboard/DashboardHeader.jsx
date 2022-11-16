@@ -2,12 +2,11 @@ import { useAuth0 } from '@auth0/auth0-react';
 import { faBell, faMessage, faSearch } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
-// import Logo from '../../../assets/images/logo.png';
 
 const DashboardHeader = () => {
   const { user, isAuthenticated } = useAuth0();
   return (
-    <div className="ml-[300px]">
+    <div className="ml-[300px] pt-4">
       <header className="flex flex-row items-center justify-between">
         <div className="flex flex-row items-center gap-5 border border-1-solid rounded-[12px] p-2">
           <FontAwesomeIcon icon={faSearch} className="opacity-[0.3]" />
@@ -21,7 +20,6 @@ const DashboardHeader = () => {
           {isAuthenticated && (
           <div className="flex flex-row gap-2 items-center">
             {user?.picture && <img src={user?.picture} alt={user?.name} className="max-w-[30px] rounded-[100%]" />}
-            {/* <img src={Logo} alt="Profile" className="max-w-[20px]" /> */}
             <h3>{user?.name}</h3>
           </div>
           )}
