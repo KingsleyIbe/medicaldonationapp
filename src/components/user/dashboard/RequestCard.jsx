@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import RequestForm from './RequestForm';
 
 const RequestCard = () => {
   const [open, setOpen] = useState(false);
@@ -6,6 +7,7 @@ const RequestCard = () => {
   const openModal = () => {
     setOpen(!open);
   };
+
   return (
     <div>
       <div className="border border-1-solid rounded-[12px] p-5 w-[300px]">
@@ -14,6 +16,9 @@ const RequestCard = () => {
           <button type="button" className="bg-[#A03] text-[#fff] px-2 rounded-[8px] py-1 ">View All</button>
         </div>
       </div>
+      {open && (
+        <RequestForm />
+      )}
     </div>
   );
 };

@@ -4,7 +4,7 @@ import {
   faUser, faUserTie, faLock, faEnvelope,
 } from '@fortawesome/free-solid-svg-icons';
 
-const DonationForm = () => (
+const RequestForm = () => (
   <div className="mt-10 bg-[#fff] rounded-[12px] flex flex-col justify-center items-center fixed top-[50px] right-[250px] z-50">
     <form>
       <div className="flex flex-row gap-10 items-center p-5 rounded-[12px]">
@@ -64,4 +64,4 @@ const DonationForm = () => (
   </div>
 );
 
-export default DonationForm;
+export default RequestForm;
