@@ -5,9 +5,9 @@ const DonationList = () => {
   const data = Data;
 
   return (
-    <div>
+    <div className="overflow-x-auto w-[100%] mt-10">
       <table>
-        <thead>
+        <thead className="overflow-x-auto block font-bold">
           <tr>
             <td>S/N</td>
             <td>FIRST NAME</td>
@@ -22,9 +22,10 @@ const DonationList = () => {
             <td>DONATED BEFORE</td>
             <td>GENOTYPE</td>
             <td>WEIGHT</td>
+            <td>Contact User</td>
           </tr>
         </thead>
-        <tbody>
+        <tbody className="overflow-x-auto block">
           {data && data.map((item) => (
             <tr key={item.id}>
               <td>{item.id}</td>
@@ -40,6 +41,7 @@ const DonationList = () => {
               <td>{item.donatedBefore}</td>
               <td>{item.genotype}</td>
               <td>{item.weight}</td>
+              <td><button type="button" className="bg-[A03] rounded-[8px] p-1 border border-1-solid">{item.btn}</button></td>
             </tr>
           ))}
         </tbody>

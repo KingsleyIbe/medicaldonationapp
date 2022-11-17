@@ -5,7 +5,7 @@ import RequestCard from './RequestCard';
 
 const UserCards = () => (
   <section className="ml-[300px] w-[100%] mt-[50px]">
-    <div className="flex gap-5 flex-row items-center">
+    <div className="flex gap-5 flex-row">
       <DonationCard />
       <RequestCard />
       <ActivityCard />
