@@ -7,6 +7,8 @@ import { Link } from 'react-router-dom';
 import {
   faLock, faUserTie, faUser,
 } from '@fortawesome/free-solid-svg-icons';
+import VerifiedMessage from './VerifiedMessage';
+import UnVerifiedMessage from './UnVerifiedMessage';
 
 const Form = () => {
   const { user, isAuthenticated } = useAuth0();
@@ -29,27 +31,38 @@ const Form = () => {
     'x-api-key': apiKey,
     'Content-Type': 'application/json',
   };
-  const { isLoading, isError } = useQuery(['user'], () => {
-    Axios.post(url, num, { headers }).then((res) => setData(res.data));
-  });
-  if (isError) (<h1>Sorry, Something went wrong!</h1>);
 
-  if (isLoading) (<h1>Loading...</h1>);
+  const [error, setError] = useState(false);
+  const [loading, setLoading] = useState(false);
+
+  // const { isLoading, isError } = useQuery(['user'], () => {
+  //   Axios.post(url, num, { headers }).then((res) => setData(res.data));
+  // });
+  const fetchData = () => {
+    Axios.post(url, num, { headers }).then((res) => setData(res.data));
+  };
+  const { isLoading, isError } = useQuery(['user'], fetchData);
 
   const handleVerification = () => {
+    fetchData();
     if (data.status === true) {
       setVerified(!verified);
-      console.log(`${nin}n`);
-      console.log(data.status);
-    } else {
-      setVerified(false);
     }
+    if (isError) {
+      setError(!error);
+    }
+
+    if (isLoading) {
+      setLoading(!loading);
+    }
+    console.log(data);
+    console.log(num);
   };
 
   return (
     <>
       {' '}
-      <div className="mt-[50px]">
+      <div className={`${verified ? 'opacity-[0.2]' : 'opacity-[1]'} mt-[50px]`}>
         <header>
           {isAuthenticated && (
             <h1 className="text-[35px] font-bold text-center">
@@ -59,6 +72,8 @@ const Form = () => {
             </h1>
           )}
           <p className="text-[18px] font-semibold opacity-[0.6] text-center w-[100%] lg:max-w-[50%] m-auto">To use Life Force, you are required to perform a KYC, Fill the form below to proceed</p>
+          {error && (<p className="text-center text-[#A03]">An authentication error</p>)}
+          {loading && (<p className="text-center text-[#A03]">Verifying details</p>)}
         </header>
       </div>
       <div className="mt-5 w-[100%] lg:w-[50%] border border-1-solid rounded-[8px]">
@@ -88,6 +103,15 @@ const Form = () => {
           <Link to="/privacy-policy" className="text-[#4e0f0f] underline">Terms of Service and Privacy Police</Link>
         </div>
       </div>
+      {verified ? (
+        <div className="bg-[#f00] p-10">
+          <VerifiedMessage />
+        </div>
+      ) : (
+        <div>
+          <UnVerifiedMessage />
+        </div>
+      )}
     </>
   );
 };
