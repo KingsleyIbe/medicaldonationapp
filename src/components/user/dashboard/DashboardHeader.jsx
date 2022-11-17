@@ -6,14 +6,14 @@ import React from 'react';
 const DashboardHeader = () => {
   const { user, isAuthenticated } = useAuth0();
   return (
-    <div className="ml-[300px] pt-4">
-      <header className="flex flex-row items-center justify-between">
+    <div className="lg:ml-[300px] ml-0 flex flex-col items-center justify-center pt-4 ">
+      <header className="flex flex-row items-center justify-between gap-2 lg:gap-0">
         <div className="flex flex-row items-center gap-5 border border-1-solid rounded-[12px] p-2">
           <FontAwesomeIcon icon={faSearch} className="opacity-[0.3]" />
-          <input type="text" placeholder="Search" />
+          <input type="text" placeholder="Search" className="max-w-[100px]" />
         </div>
-        <div className="flex flex-row gap-10 items-center mr-10">
-          <div className="flex flex-row gap-10 items-center">
+        <div className="flex flex-row lg:gap-10 items-center mr-10">
+          <div className="flex flex-row lg:gap-10 gap-2  items-center">
             <FontAwesomeIcon icon={faBell} className="text-[#A03] text-[20px]" />
             <FontAwesomeIcon icon={faMessage} className="text-[#17a2b8] text-[20px]" />
           </div>
