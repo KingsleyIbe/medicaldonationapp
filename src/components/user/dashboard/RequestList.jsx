@@ -1,13 +1,13 @@
 import React from 'react';
 import Data from './DonationTableData';
 
-const DonationList = () => {
+const RequestList = () => {
   const data = Data;
 
   return (
     <div className="overflow-x-auto w-[100%] mt-10">
       <div className="font-bold">
-        <h1>Available Donations</h1>
+        <h1>Available Requests</h1>
       </div>
       <table>
         <thead className="overflow-x-auto block font-bold">
@@ -53,4 +53,4 @@ const DonationList = () => {
   );
 };
 
-export default DonationList;
+export default RequestList;

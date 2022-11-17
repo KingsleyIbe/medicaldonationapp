@@ -1,4 +1,5 @@
 import React from 'react';
+import ActivityList from './ActivityList';
 
 const ActivityCard = () => (
   <div>
@@ -6,6 +7,9 @@ const ActivityCard = () => (
       <div className="flex flex-row items-center justify-between">
         <h2 className="text-[#A03]">Recent Activities</h2>
         <p>Date</p>
+      </div>
+      <div>
+        <ActivityList />
       </div>
     </div>
   </div>

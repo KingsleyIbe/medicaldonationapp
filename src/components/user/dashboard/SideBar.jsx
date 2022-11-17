@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleDoubleLeft } from '@fortawesome/free-solid-svg-icons';
+import {
+  faAngleDoubleLeft, faDashboard, faMessage, faWarning, faBook, faEnvelope,
+} from '@fortawesome/free-solid-svg-icons';
 import Logo from '../../../assets/images/logo.png';
 import LogoutButton from '../LogoutButton';
 
@@ -58,29 +60,36 @@ const SideBar = () => {
             <li><img src={Logo} alt="Logo" className="max-w-[50px] m-auto mb-[100px]" /></li>
             <li>
               <button type="button" onClick={openDonate} className="flex gap-5 items-center">
-                <FontAwesomeIcon icon={faAngleDoubleLeft} />
-                <p>Donate Blood</p>
+                <FontAwesomeIcon icon={faDashboard} />
+                <p>Dashboard</p>
               </button>
             </li>
             <li className="mt-5">
               <button type="button" onClick={openBloodRequest} className="flex gap-5 items-center">
-                <FontAwesomeIcon icon={faAngleDoubleLeft} />
+                <FontAwesomeIcon icon={faMessage} />
                 {' '}
-                <p>Blood Request</p>
+                <p>Message</p>
               </button>
             </li>
             <li className="my-5">
               <button type="button" onClick={openDonationHistory} className="flex gap-5 items-center">
-                <FontAwesomeIcon icon={faAngleDoubleLeft} />
+                <FontAwesomeIcon icon={faWarning} />
                 {' '}
-                <p>Donation History</p>
+                <p>Help</p>
+              </button>
+            </li>
+            <li className="my-5">
+              <button type="button" onClick={openDonationHistory} className="flex gap-5 items-center">
+                <FontAwesomeIcon icon={faBook} />
+                {' '}
+                <p>Read Policy</p>
               </button>
             </li>
             <li>
               <button type="button" onClick={openRequestHistory} className="flex gap-5 items-center">
-                <FontAwesomeIcon icon={faAngleDoubleLeft} />
+                <FontAwesomeIcon icon={faEnvelope} />
                 {' '}
-                <p>Request History</p>
+                <p>Provide Feedback</p>
               </button>
             </li>
             <li><LogoutButton /></li>

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import RequestForm from './RequestForm';
+import RequestList from './RequestList';
 
 const RequestCard = () => {
   const [open, setOpen] = useState(false);
@@ -14,6 +15,9 @@ const RequestCard = () => {
         <div className="flex flex-row items-center justify-between">
           <button onClick={openModal} type="button" className="text-[#fff] bg-[#17a2b8] px-2 rounded-[8px] py-1">Request Item</button>
           <button type="button" className="bg-[#A03] text-[#fff] px-2 rounded-[8px] py-1 ">View All</button>
+        </div>
+        <div>
+          <RequestList />
         </div>
       </div>
       {open && (

@@ -5,7 +5,7 @@ import SideBar from './SideBar';
 import UserCards from './UserCards';
 
 const UserDashBoard = () => (
-  <div>
+  <div className="">
     <SideBar />
     <DashboardHeader />
     {/* <HistorySummary /> */}
