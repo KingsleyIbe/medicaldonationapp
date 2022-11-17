@@ -125,11 +125,11 @@ const DonationForm = () => {
             </label>
             <label htmlFor="available" className="register-input-bolder flex flex-row gap-4 items-center my-5 p-2">
               <FontAwesomeIcon icon={faLock} className="opacity-[0.2]" />
-              <input type="text" required placeholder="What is your earliest available date? " value={formData.availableDate} name="availableDate" onChange={onChange} />
+              <input type="date" required placeholder="What is your earliest available date? " value={formData.availableDate} name="availableDate" onChange={onChange} />
             </label>
             <label htmlFor="donationItem" className="register-input-bolder flex flex-row gap-4 items-center my-5 p-2">
               <FontAwesomeIcon icon={faLock} className="opacity-[0.2]" />
-              <input type="date" placeholder="What item do you want to donation? " value={formData.donationItem} name="donationItem" onChange={onChange} />
+              <input type="text" placeholder="What item do you want to donation? " value={formData.donationItem} name="donationItem" onChange={onChange} />
             </label>
           </div>
         </div>
