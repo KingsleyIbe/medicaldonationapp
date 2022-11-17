@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { v4 as uuidv4 } from 'uuid';
 import DonationForm from './DonationForm';
 
 const DonationCard = () => {
@@ -6,6 +7,29 @@ const DonationCard = () => {
 
   const openModal = () => {
     setOpen(!open);
+  };
+
+  function getInitialDonations() {
+    // getting stored items
+    const temp = localStorage.getItem('donations');
+    const Donations = JSON.parse(temp);
+    return Donations || [];
+  }
+
+  const [donations, setDonations] = useState(getInitialDonations());
+
+  useEffect(() => {
+    // storing new donation forms
+    const temp = JSON.stringify(donations);
+    localStorage.setItem('donations', temp);
+  }, [donations]);
+
+  const addNewForm = (first) => {
+    const newDonation = {
+      id: uuidv4(),
+      firstName: first,
+    };
+    setDonations([...donations, newDonation]);
   };
 
   return (
@@ -17,7 +41,7 @@ const DonationCard = () => {
         </div>
       </div>
       {open && (
-        <DonationForm />
+        <DonationForm addDonationProps={addNewForm} />
       )}
     </div>
   );
