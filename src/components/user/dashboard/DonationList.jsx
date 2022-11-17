@@ -1,8 +1,7 @@
 import React from 'react';
-import Data from './DonationTableData';
 
 const DonationList = () => {
-  const data = Data;
+  const data = localStorage.getItem('donationList') ? JSON.parse(localStorage.getItem('donationList')) : [];
 
   return (
     <div className="overflow-x-auto w-[100%] mt-10">
@@ -12,7 +11,7 @@ const DonationList = () => {
       <table>
         <thead className="overflow-x-auto block font-bold">
           <tr>
-            <td>S/N</td>
+            <td>Donation ID</td>
             <td>FIRST NAME</td>
             <td>LAST NAME</td>
             <td>AGE</td>

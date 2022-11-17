@@ -1,39 +1,37 @@
 /* eslint-disable no-unreachable */
 import { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
-// import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
 import {
   faUser, faUserTie, faLock, faEnvelope, faLocation, faPhone, faHeartCirclePlus,
 } from '@fortawesome/free-solid-svg-icons';
 
-const getInitialDonations = () => {
-  // getting stored items
-  const temp = localStorage.getItem('donations') ? JSON.parse(localStorage.getItem('donations')) : [];
-  if (!temp) {
-    return {
-      firstName: '',
-      lastName: '',
-      email: '',
-      phone: '',
-      age: '',
-      weight: '',
-      genotype: '',
-      availableDate: '',
-      hivStatus: '',
-      location: '',
-      donatedBefore: '',
-      bloodGroup: '',
-      gender: '',
-      donationItem: '',
-    };
-  }
-  return temp;
-};
-
 const DonationForm = () => {
-  // const [donationData, setDonationData] = useState(getInitialDonations());
+  const getInitialDonations = () => {
+    // getting stored items
+    const temp = localStorage.getItem('donationList') ? JSON.parse(localStorage.getItem('donationList')) : [];
+    if (!temp) {
+      return {
+        firstName: '',
+        lastName: '',
+        email: '',
+        phone: '',
+        age: '',
+        weight: '',
+        genotype: '',
+        availableDate: '',
+        hivStatus: '',
+        location: '',
+        donatedBefore: '',
+        bloodGroup: '',
+        gender: '',
+        donationItem: '',
+      };
+    }
+    return (temp);
+  };
+
   const [donationData, setDonationData] = useState(getInitialDonations());
   const [formData, setFormData] = useState({
     firstName: '',
@@ -50,6 +48,7 @@ const DonationForm = () => {
     bloodGroup: '',
     gender: '',
     donationItem: '',
+    btn: 'Contact this user',
   });
 
   const onChange = (e) => {
