@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-  faAngleDoubleLeft, faDashboard, faMessage, faWarning, faBook, faEnvelope,
+  faAngleDoubleLeft, faDashboard, faMessage, faWarning, faBook, faEnvelope, faSignOut,
 } from '@fortawesome/free-solid-svg-icons';
 import Logo from '../../../assets/images/logo.png';
 import LogoutButton from '../LogoutButton';
@@ -51,48 +51,52 @@ const SideBar = () => {
           <FontAwesomeIcon
             icon={faAngleDoubleLeft}
             className={`bg-[#A03] text-[#fff] rounded-full -right-3 border-dark-purple 
-            absolute cursor-pointer top-9 w-7 border-2 ${
+            absolute cursor-pointer top-9 w- border-2 ${
               !open && 'rotate-[180]'
             }`}
             onClick={() => setOpen(!open)}
           />
           <ul className="text-[#fff]">
-            <li><img src={Logo} alt="Logo" className="max-w-[50px] m-auto mb-[100px]" /></li>
-            <li>
+            {open && (<li><img src={Logo} alt="Logo" className="max-w-[50px] m-auto mb-[100px]" /></li>)}
+            <li className="hover:bg-[#fff] hover:text-[#17a2b8] hover:p-2 rounded-[12px]">
               <button type="button" onClick={openDonate} className="flex gap-5 items-center">
                 <FontAwesomeIcon icon={faDashboard} />
-                <p>Dashboard</p>
+                {open && (<p>Dashboard</p>)}
               </button>
             </li>
-            <li className="mt-5">
+            <li className="mt-5 hover:bg-[#fff] hover:text-[#17a2b8] hover:p-2 rounded-[12px]">
               <button type="button" onClick={openBloodRequest} className="flex gap-5 items-center">
                 <FontAwesomeIcon icon={faMessage} />
                 {' '}
-                <p>Message</p>
+                {open && (<p>Message</p>)}
               </button>
             </li>
-            <li className="my-5">
+            <li className="my-5 hover:bg-[#fff] hover:text-[#17a2b8] hover:p-2 rounded-[12px]">
               <button type="button" onClick={openDonationHistory} className="flex gap-5 items-center">
                 <FontAwesomeIcon icon={faWarning} />
                 {' '}
-                <p>Help</p>
+                {open && (<p>Help</p>)}
               </button>
             </li>
-            <li className="my-5">
+            <li className="my-5 hover:bg-[#fff] hover:text-[#17a2b8] hover:p-2 rounded-[12px]">
               <button type="button" onClick={openDonationHistory} className="flex gap-5 items-center">
                 <FontAwesomeIcon icon={faBook} />
                 {' '}
-                <p>Read Policy</p>
+                {open && (<p>Read Policy</p>)}
               </button>
             </li>
-            <li>
+            <li className="hover:bg-[#fff] hover:text-[#17a2b8] hover:p-2 rounded-[12px]">
               <button type="button" onClick={openRequestHistory} className="flex gap-5 items-center">
                 <FontAwesomeIcon icon={faEnvelope} />
                 {' '}
-                <p>Provide Feedback</p>
+                {open && (<p>Provide Feedback</p>)}
               </button>
             </li>
-            <li><LogoutButton /></li>
+            <li className="mt-[100px] flex flex-row gap-2 items-center hover:bg-[#fff] hover:text-[#17a2b8] hover:p-2 rounded-[12px]">
+              <FontAwesomeIcon icon={faSignOut} />
+              {open && (<LogoutButton />)}
+
+            </li>
           </ul>
         </nav>
       </header>
