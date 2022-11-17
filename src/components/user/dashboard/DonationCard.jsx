@@ -17,7 +17,7 @@ const DonationCard = () => {
           <button type="button" className="bg-[#A03] text-[#fff] px-2 rounded-[8px] py-1 ">View All</button>
         </div>
         <div>
-          <DonationList className="overflow-x-auto max-w-[100%]" />
+          <DonationList />
         </div>
       </div>
       {open && (
