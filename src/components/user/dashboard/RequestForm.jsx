@@ -68,9 +68,9 @@ const RequestForm = () => {
   };
 
   return (
-    <div className="mt-10 bg-[#fff] rounded-[12px] flex flex-col justify-center items-center fixed top-[50px] right-[250px] z-50">
+    <div className="mt-10 bg-[#fff] rounded-[12px] flex flex-col justify-center items-center absolute top-[50px] lg:right-[250px] z-50">
       <form onSubmit={handleSubmit}>
-        <div className="flex flex-row gap-10 items-center p-5 rounded-[12px]">
+        <div className="flex flex-row gap-0 lg:gap-10 items-center p-5 rounded-[12px] lg:flex-row flex-col">
           <div>
             <label htmlFor="First Name" className="register-input-bolder flex flex-row gap-4 items-center p-2">
               <FontAwesomeIcon icon={faUser} className="opacity-[0.2]" />
@@ -136,9 +136,9 @@ const RequestForm = () => {
           <button type="submit" className="rounded-[8px] px-[21px] py-[12px] bg-[#A03] w-[100%] text-[#fff]">Submit</button>
         </div>
       </form>
-      <div className="mt-2 opacity-[0.8]">
+      <div className="mt-2 opacity-[0.8] mb-10">
         <p>By continuing, you agree to Life Force&#39;s</p>
-        <Link to="/privacy-policy">Terms of Service and Privacy Police</Link>
+        <Link to="/privacy-policy" className="underline">Terms of Service and Privacy Police</Link>
       </div>
     </div>
   );
