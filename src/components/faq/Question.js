@@ -1,8 +1,4 @@
 import React from 'react';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import {
-//   faRulerHorizontal,
-// } from '@fortawesome/free-solid-svg-icons';
 import LoginButton from '../user/LoginButton';
 import Accordion from './Accordion';
 
@@ -11,7 +7,6 @@ const Question = () => (
     <div className="p-10">
       <div>
         <h2 className="font-medium text-[48px] uppercase m-auto w-[116px] link h2-mobile">FAQs</h2>
-        {/* <FontAwesomeIcon icon={faRulerHorizontal} className=" text-[30px] text-[#A03]" /> */}
       </div>
       <div className="lg:w-[591px] w-[100%] py-10 m-auto font-bold text-[26px] inter-font some-questions">
         <h3 className="h3-mobile-question h3-ques text-center">Some Questions you might need an answer to</h3>

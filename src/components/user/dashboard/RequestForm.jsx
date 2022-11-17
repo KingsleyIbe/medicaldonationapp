@@ -128,7 +128,7 @@ const RequestForm = () => {
             </label>
             <label htmlFor="availableDate" className="register-input-bolder flex flex-row gap-4 items-center my-5 p-2">
               <FontAwesomeIcon icon={faLock} className="opacity-[0.2]" />
-              <input type="date" placeholder="What date do you need this item?" value={formData.availableDate} name="available" onChange={onChange} />
+              <input type="date" placeholder="What date do you need this item?" value={formData.availableDate} name="availableDate" onChange={onChange} />
             </label>
           </div>
         </div>
