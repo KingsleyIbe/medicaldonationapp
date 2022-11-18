@@ -6,9 +6,9 @@ This is a medical application which allows registered users (patients) to find a
 Project Repo:
 [View Here](https://github.com/KingsleyIbe/medicaldonationapp)
  
-- ## [Live Demo](https://life-force.vercel.app)
-- ## [Live video Link](https://youtu.be/H4iXYVPgqGg)
-- ## [Slide presentation](https://docs.google.com/presentation/d/1uS9XvNW4KAFECinIYzUuFNQ0QLGKMIq0fm2FHvU7Stg/edit?usp=sharing)
+- ### [Live Demo](https://life-force.vercel.app)
+- ### [Live video Link](https://youtu.be/H4iXYVPgqGg)
+- ### [Slide presentation](https://docs.google.com/presentation/d/1uS9XvNW4KAFECinIYzUuFNQ0QLGKMIq0fm2FHvU7Stg/edit?usp=sharing)
 # Demo Account
  [Figma Prototype]( https://www.figma.com/proto/Ua7JZThSKzLuAVrZUxMk8e/Donation?node-id=29%3A136&scaling=scale-down&page-id=0%3A1&starting-point-node-id=29%3A136)
 
@@ -97,11 +97,12 @@ To get a local copy up and running follow these simple steps.
 
  
  🔭 Future Features
+
 We intend to implement the following feature in subsequent versions.
 
- [Register organisation]
- [Tag Expired transactions as expired]
- [Motivation drive: Implementation of Levels, cadar, points, coupon or gift card reward]
+ - [ ] Register organisation
+ - [ ] Tag Expired transactions as expired
+ - [ ] Motivation drive: Implementation of Levels, cadar, points, coupon or gift card reward
 
 ## 🤝 Contributing
  
@@ -116,7 +117,7 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
  
 - Hats off to [Prembly](https://www.prembly.com/). ✨
-- [myidentitypass](https://myidentitypass.com/)for giving us this opportunity to their API feature
+- [myidentitypass](https://myidentitypass.com/) for giving us this opportunity to their API feature
 - The amazing mentor for making us improve every day 👍
 
 ❓ FAQ
