@@ -19,7 +19,6 @@ const Form = () => {
   const num = {
     number: nin,
   };
-  console.log(nin);
   // 'AA1234567890123B'
 
   const url = process.env.REACT_APP_API_URL_NIN;
@@ -32,12 +31,9 @@ const Form = () => {
     'Content-Type': 'application/json',
   };
 
-  const [error, setError] = useState(false);
+  const [error, setError] = useState(true);
   const [loading, setLoading] = useState(false);
 
-  // const { isLoading, isError } = useQuery(['user'], () => {
-  //   Axios.post(url, num, { headers }).then((res) => setData(res.data));
-  // });
   const fetchData = () => {
     Axios.post(url, num, { headers }).then((res) => setData(res.data));
   };
@@ -80,15 +76,15 @@ const Form = () => {
         <form className="p-10">
           <label htmlFor="firstName" className="input-active-border register-input-bolder flex flex-row gap-4 items-center my-5 p-2">
             <FontAwesomeIcon icon={faUser} className="opacity-[0.2]" />
-            <input type="text" placeholder="First Name" className="w-[100%]" />
+            <input type="text" required placeholder="First Name" className="w-[100%]" />
           </label>
           <label htmlFor="lastName" className="input-active-border register-input-bolder flex flex-row gap-4 items-center my-5 p-2">
             <FontAwesomeIcon icon={faUserTie} className="opacity-[0.2]" />
-            <input type="text" placeholder="Last Name" className="w-[100%]" />
+            <input type="text" required placeholder="Last Name" className="w-[100%]" />
           </label>
-          <label htmlFor="vnin" className="input-active-border register-input-bolder flex flex-row gap-4 items-center my-5 p-2">
+          <label htmlFor="nin" className="input-active-border register-input-bolder flex flex-row gap-4 items-center my-5 p-2">
             <FontAwesomeIcon icon={faLock} className="opacity-[0.2]" />
-            <input type="text" placeholder="Enter Virtual NIN" value={nin} onInput={(e) => setNumber(e.target.value)} className="w-[100%]" />
+            <input type="text" required placeholder="Enter Virtual NIN" value={nin} onInput={(e) => setNumber(e.target.value)} className="w-[100%]" />
           </label>
           <div className="flex flex-col items-center justify-center my-5 p-2">
             <button onClick={handleVerification} type="button" className="rounded-[8px] px-[21px] py-[12px] bg-[#4e0f0f] w-[100%] text-[#fff]">Continue</button>
@@ -96,7 +92,7 @@ const Form = () => {
         </form>
         <div className="flex flex-row items-center gap-2 justify-between p-10">
           <p>Don&#39;t have a virtual NIN?</p>
-          <Link to="/sign-up" className="text-[#4e0f0f] underline">See Guide</Link>
+          <a href="https://developer.myidentitypass.com/products/data-verification/nigeria/nin-verification/lookup-nin" target="__blank" className="text-[#4e0f0f] underline">See Guide</a>
         </div>
         <div className="mt-2 opacity-[0.5] text-center mb-[50px]">
           <p>By continuing, you agree to Life force&#39;s</p>
