@@ -16,3 +16,99 @@ body {
   overflow-x: hidden;
   font-family: 'Red Rose', Courier, monospace;
 }
+
+.register-input-bolder {
+  border: 1px solid rgb(211, 208, 208);
+  border-radius: 4px;
+}
+
+input::placeholder {
+  border: none;
+  font-size: 14px;
+}
+
+.border-right {
+  border-right: 1px solid #ccc;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #ccc;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+tr:nth-child(even),
+th:nth-child(even) {
+  background-color: #d6eeee;
+}
+
+table tr:hover {
+  background-color: #17a2b8;
+  color: whitesmoke;
+}
+
+table tr td {
+  padding: 12px 10px;
+}
+
+table tr td:nth-child(2) {
+  text-align: center;
+}
+
+table tr td:nth-child(3) {
+  text-align: center;
+}
+
+.shape-1 {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.shape-1-a {
+  background: #0f0;
+}
+
+.shape-1-b {
+  background: #f00;
+}
+
+.shape-1-c {
+  background: #00f;
+}
+
+.shape-1-d {
+  background: #0ff;
+}
+
+.shape-1-e {
+  background: #9acd32;
+}
+
+.shape-1-f {
+  background: #800080;
+}
+
+.shape-1-g {
+  background: #808080;
+}
+
+.shape-1-h {
+  background: #daa520;
+}
+
+.shape-1-i {
+  background: #f0f;
+}
+
+.set-overflow li {
+  overflow-x: auto;
+}
+
+.set-overflow li p {
+  max-width: 100%;
+}
