@@ -1,4 +1,4 @@
-# BLOOD BANK APP
+# LIFE FORCE APP
 This is a medical application which allows registered users (patients) to find and book medical items donors nearest to them. Key features: User will be able to Request/Donate items, Book appointment, View all available donations/requests, Authenticate user, Pairing/suggestion of Donor and/or receiver by location (Location name or Zip code), FAQ section.
  
 - This app is a front-end side of the final Blood Bank project. You can find the back-end app [here](https://github.com/Gahdloot/life-giver).
@@ -64,15 +64,15 @@ To get a local copy up and running follow these simple steps.
  
  👤 Michael David**
  
-- [Github](https://github.com/KingsleyIbe)
-- [Twitter](https://twitter.com/ibekingsley2)
-- [LinkedIn](https://www.linkedin.com/in/kingsley-ibe/)
+- [github](https://github.com/Gahdloot)
+- [Twitter](https://twitter.com/David_Gahd)
+- [linkedin](www.linkedin.com/in/David-Michael-Oyenuga)
  
 👤 Josephine Bonka
  
-- [Github](https://github.com/KingsleyIbe)
-- [Twitter](https://twitter.com/ibekingsley2)
-- [LinkedIn](https://www.linkedin.com/in/kingsley-ibe/)
+- [github](https://github.com/josephineEng)
+- [Twitter](https://twitter.com/josephineeng2)
+- [linkedin](www.linkedin.com/in/josephine-bonka-250263207)
 
 👤 Adio Usman
  
@@ -82,7 +82,7 @@ To get a local copy up and running follow these simple steps.
 
  
  🔭 Future Features
-Describe 1 - 3 features you will add to the project.
+We intend to implement the following feature in subsequent versions.
 
  [Register organisation]
  [Tag Expired transactions as expired]
@@ -121,8 +121,6 @@ We glad to answer some of your questions here:
 
 [Find answers here](https://life-force.vercel.app/faq)
 
-
- 
 ## 📝 License
  
 This project is [MIT](./LICENCE) licensed.
