@@ -6,8 +6,9 @@ This is a medical application which allows registered users (patients) to find a
 Project Repo:
 [View Here](https://github.com/KingsleyIbe/medicaldonationapp)
  
-- # [Live Demo](https://life-force.vercel.app)
-- # [Live Demo Link](https://youtu.be/H4iXYVPgqGg)
+- ## [Live Demo](https://life-force.vercel.app)
+- ## [Live video Link](https://youtu.be/H4iXYVPgqGg)
+- ## [Slide presentation](https://docs.google.com/presentation/d/1uS9XvNW4KAFECinIYzUuFNQ0QLGKMIq0fm2FHvU7Stg/edit?usp=sharing)
 # Demo Account
  [Figma Prototype]( https://www.figma.com/proto/Ua7JZThSKzLuAVrZUxMk8e/Donation?node-id=29%3A136&scaling=scale-down&page-id=0%3A1&starting-point-node-id=29%3A136)
 

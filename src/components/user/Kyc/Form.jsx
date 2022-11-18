@@ -51,8 +51,6 @@ const Form = () => {
     if (isLoading) {
       setLoading(!loading);
     }
-    console.log(data);
-    console.log(num);
   };
 
   return (

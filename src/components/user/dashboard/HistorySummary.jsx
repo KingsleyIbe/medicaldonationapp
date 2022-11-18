@@ -12,7 +12,6 @@ const HistorySummary = () => {
           <ul key={item.id}>
             <li className="flex flex-row items-center justify-between">
               <p>{item.totalNumber}</p>
-              {/* <FontAwesomeIcon icon={item.icon} /> */}
               <p>{item.icon}</p>
             </li>
             <li><p>{item.title}</p></li>

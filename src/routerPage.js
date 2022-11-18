@@ -4,7 +4,6 @@ import FaqPage from './pages/faq/FaqPage';
 import LandingPage from './pages/landingPage/landingPage';
 import DashboardPage from './pages/user/DashboardPage';
 import KYCPage from './pages/user/KYCPage';
-// import ProfilePage from './pages/user/ProfilePage';
 
 const RouterPage = () => (
   <>
