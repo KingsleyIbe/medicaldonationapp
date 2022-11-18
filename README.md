@@ -8,9 +8,25 @@ Project Repo:
  
 - # [Live Demo](https://life-force.vercel.app)
 - # [Live Demo Link](https://youtu.be/H4iXYVPgqGg)
- 
 # Demo Account
  [Figma Prototype]( https://www.figma.com/proto/Ua7JZThSKzLuAVrZUxMk8e/Donation?node-id=29%3A136&scaling=scale-down&page-id=0%3A1&starting-point-node-id=29%3A136)
+
+#### Budget App Screenshots
+
+<table>
+  <tr>
+    <td>Home Page</td>
+     <td>Sign up/Login page (auth0)</td>
+     <td>KYC verification page</td>
+     <td>User dashboard</td>
+  </tr>
+  <tr>
+    <td><img src="./src/assets/images/homepageScreentshot.png" width=100% height=100%></td>
+    <td><img src="./src/assets/images/signup.png" width=100% height=100%></td>
+    <td><img src="./src/assets/images/kyc.png" width=100% height=100%></td>
+    <td><img src="./src/assets/images/dashboard.jpeg" width=100% height=100%></td>
+  </tr>
+ </table>
 
 # Built with
  - React
