@@ -1,7 +1,7 @@
 # LIFE FORCE APP
 This is a medical application which allows registered users (patients) to find and book medical items donors nearest to them. Key features: User will be able to Request/Donate items, Book appointment, View all available donations/requests, Authenticate user, Pairing/suggestion of Donor and/or receiver by location (Location name or Zip code), FAQ section.
  
-- This app is a front-end side of the final Blood Bank project. You can find the back-end app [here](https://github.com/Gahdloot/life-giver).
+- This app is a front-end side of the Life Force project. You can find the back-end app [here](https://github.com/Gahdloot/life-giver).
  
 Project Repo:
 [View Here](https://github.com/KingsleyIbe/medicaldonationapp)
@@ -91,9 +91,9 @@ To get a local copy up and running follow these simple steps.
 
 👤 Adio Usman
  
-- [Github](https://github.com/KingsleyIbe)
-- [Twitter](https://twitter.com/ibekingsley2)
-- [LinkedIn](https://www.linkedin.com/in/kingsley-ibe/)
+- [Github](https://github.com/usafod)
+- [Twitter](https://twitter.com/usafod)
+- [LinkedIn](https://www.linkedin.com/in/adiousman/)
 
  
  🔭 Future Features
