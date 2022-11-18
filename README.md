@@ -6,7 +6,8 @@ This is a medical application which allows registered users (patients) to find a
 Project Repo:
 [View Here](https://github.com/KingsleyIbe/medicaldonationapp)
  
-# [Live Demo](https://life-force.vercel.app)
+- # [Live Demo](https://life-force.vercel.app)
+- # [Live Demo Link](https://youtu.be/H4iXYVPgqGg)
  
 # Demo Account
  [Figma Prototype]( https://www.figma.com/proto/Ua7JZThSKzLuAVrZUxMk8e/Donation?node-id=29%3A136&scaling=scale-down&page-id=0%3A1&starting-point-node-id=29%3A136)
@@ -19,9 +20,6 @@ Project Repo:
  - Tailwind css
  - Django
  - Auth0
-
- 
- 
 ## The learning objective of this project are
  
 - Create-react-app (frontend app)
@@ -66,7 +64,7 @@ To get a local copy up and running follow these simple steps.
  
 - [github](https://github.com/Gahdloot)
 - [Twitter](https://twitter.com/David_Gahd)
-- [linkedin](www.linkedin.com/in/David-Michael-Oyenuga)
+- [linkedin](https://www.linkedin.com/in/michael-david-oyenuga)
  
 👤 Josephine Bonka
  
