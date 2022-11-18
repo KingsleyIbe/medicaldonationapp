@@ -11,7 +11,7 @@ Project Repo:
 # Demo Account
  [Figma Prototype]( https://www.figma.com/proto/Ua7JZThSKzLuAVrZUxMk8e/Donation?node-id=29%3A136&scaling=scale-down&page-id=0%3A1&starting-point-node-id=29%3A136)
 
-#### Budget App Screenshots
+#### Life Force App Screenshots
 
 <table>
   <tr>
