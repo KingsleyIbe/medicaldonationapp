@@ -6,10 +6,27 @@ This is a medical application which allows registered users (patients) to find a
 Project Repo:
 [View Here](https://github.com/KingsleyIbe/medicaldonationapp)
  
-# [Live Demo](https://life-force.vercel.app)
- 
+- # [Live Demo](https://life-force.vercel.app)
+- # [Live Demo Link](https://youtu.be/H4iXYVPgqGg)
 # Demo Account
  [Figma Prototype]( https://www.figma.com/proto/Ua7JZThSKzLuAVrZUxMk8e/Donation?node-id=29%3A136&scaling=scale-down&page-id=0%3A1&starting-point-node-id=29%3A136)
+
+#### Budget App Screenshots
+
+<table>
+  <tr>
+    <td>Home Page</td>
+     <td>Sign up/Login page (auth0)</td>
+     <td>KYC verification page</td>
+     <td>User dashboard</td>
+  </tr>
+  <tr>
+    <td><img src="./src/assets/images/homepageScreentshot.png" width=100% height=100%></td>
+    <td><img src="./src/assets/images/signup.png" width=100% height=100%></td>
+    <td><img src="./src/assets/images/kyc.png" width=100% height=100%></td>
+    <td><img src="./src/assets/images/dashboard.jpeg" width=100% height=100%></td>
+  </tr>
+ </table>
 
 # Built with
  - React
@@ -19,9 +36,6 @@ Project Repo:
  - Tailwind css
  - Django
  - Auth0
-
- 
- 
 ## The learning objective of this project are
  
 - Create-react-app (frontend app)
@@ -66,7 +80,7 @@ To get a local copy up and running follow these simple steps.
  
 - [github](https://github.com/Gahdloot)
 - [Twitter](https://twitter.com/David_Gahd)
-- [linkedin](www.linkedin.com/in/David-Michael-Oyenuga)
+- [linkedin](https://www.linkedin.com/in/michael-david-oyenuga)
  
 👤 Josephine Bonka
  
