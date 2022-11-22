@@ -9,9 +9,9 @@ const RequestList = () => {
       <div className="font-bold">
         <h1>Available Requests</h1>
       </div>
-      <table>
+      <table className="max-w-[100%] text-[14px]">
         <thead className="overflow-x-auto block font-bold">
-          <tr>
+          <tr className="border border-1-solid">
             <td>Request ID</td>
             <td>FIRST NAME</td>
             <td>LAST NAME</td>
