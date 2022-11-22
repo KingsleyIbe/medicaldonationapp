@@ -17,7 +17,7 @@ const RouterPage = () => (
     <Routes>
       <Route path="/" element={<LandingPage />} />
       <Route exact path="/kyc" element={<KYCPage />} />
-      <Route exact path="/dashboard" element={<DashboardPage />} />
+      <Route exact path="/dashboard/summary" element={<DashboardPage />} />
       <Route exact path="/dashboard/donate-item" element={<DonateItemPage />} />
       <Route exact path="/dashboard/request-item" element={<RequestItemPage />} />
       <Route exact path="/dashboard/message" element={<MessagePage />} />

@@ -3,13 +3,20 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-  faAngleDoubleLeft, faDashboard, faMessage, faWarning, faBook, faEnvelope, faSignOut,
+  faAngleDoubleLeft, faSignOut,
 } from '@fortawesome/free-solid-svg-icons';
 import Logo from '../../../../assets/images/logo.png';
 import LogoutButton from '../../LogoutButton';
+import Data from './SideBarData';
 
 const SideBar = ({ minimax }) => {
   const sideBarState = localStorage.getItem('sideBarState');
+
+  const data = Data;
+
+  const navLinksStyles = ({ isActive }) => ({
+    color: isActive ? '#A03' : 'none',
+  });
 
   return (
     <div className="sidebar relative">
@@ -26,10 +33,20 @@ const SideBar = ({ minimax }) => {
             }`}
             onClick={() => minimax()}
           />
-          <ul className="text-[#fff]">
-            {sideBarState && (<li><img src={Logo} alt="Logo" className="max-w-[50px] m-auto mb-[50px]" /></li>)}
+          {sideBarState && (<img src={Logo} alt="Logo" className="max-w-[50px] m-auto mb-[50px]" />)}
+          {data && data.map((item) => (
+            <ul key={item?.id} className="text-[#fff] my-5">
+              <li className="hover:bg-[#fff] hover:text-[#17a2b8] hover:p-2 rounded-[12px]">
+                <NavLink to={item?.to} className="flex gap-5 items-center" style={navLinksStyles}>
+                  <FontAwesomeIcon icon={item?.icon} />
+                  {sideBarState && (<p>{item?.title}</p>)}
+                </NavLink>
+              </li>
+            </ul>
+          ))}
+          {/* <ul className="text-[#fff]">
             <li className="hover:bg-[#fff] hover:text-[#17a2b8] hover:p-2 rounded-[12px]">
-              <NavLink to="/dashboard" className="flex gap-5 items-center">
+              <NavLink to="/dashboard" className="flex gap-5 items-center" style={navLinksStyles}>
                 <FontAwesomeIcon icon={faDashboard} />
                 {sideBarState && (<p>Dashboard</p>)}
               </NavLink>
@@ -82,13 +99,12 @@ const SideBar = ({ minimax }) => {
                 {' '}
                 {sideBarState && (<p>Provide Feedback</p>)}
               </NavLink>
-            </li>
-            <li className="mt-[100px] flex flex-row gap-2 items-center hover:bg-[#fff] hover:text-[#17a2b8] hover:p-2 rounded-[12px]">
-              <FontAwesomeIcon icon={faSignOut} />
-              {sideBarState && (<LogoutButton />)}
+            </li> */}
+          <div className="mt-[100px] text-[#fff] flex flex-row gap-2 items-center hover:bg-[#fff] hover:text-[#17a2b8] hover:p-2 rounded-[12px]">
+            <FontAwesomeIcon icon={faSignOut} />
+            {sideBarState && (<LogoutButton />)}
 
-            </li>
-          </ul>
+          </div>
         </nav>
       </header>
     </div>
