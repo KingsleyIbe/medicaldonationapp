@@ -5,7 +5,7 @@ import DonationCard from './DonationCard';
 import RequestCard from './RequestCard';
 
 const UserCards = () => (
-  <section className="ml-0 flex flex-col lg:block items-center justify-center lg:ml-[300px] w-[100%] mt-[50px]">
+  <section className="flex flex-col lg:block items-center justify-center w-[100%] mt-[50px]">
     <div className="flex gap-5 flex-col lg:flex-row">
       <DonationCard />
       <RequestCard />
