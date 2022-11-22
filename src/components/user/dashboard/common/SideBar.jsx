@@ -33,7 +33,7 @@ const SideBar = ({ minimax }) => {
             }`}
             onClick={() => minimax()}
           />
-          {sideBarState && (<img src={Logo} alt="Logo" className="max-w-[50px] m-auto mb-[50px]" />)}
+          {sideBarState && (<img src={Logo} alt="Logo" className="max-w-[50px] m-auto mb-[100px]" />)}
           {data && data.map((item) => (
             <ul key={item?.id} className="text-[#fff] my-5">
               <li className="hover:bg-[#fff] hover:text-[#17a2b8] hover:p-2 rounded-[12px]">

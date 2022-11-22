@@ -14,7 +14,7 @@ const DonateItem = () => {
   return (
     <div className="relative">
       <SideBar minimax={openModal} />
-      <div className={`${open ? 'lg:ml-[300px]' : 'ml-[100px]'} `}>
+      <div className={`${open ? 'lg:ml-[265px]' : 'ml-[100px]'} `}>
         <DashboardHeader />
         <DonationCard />
       </div>
