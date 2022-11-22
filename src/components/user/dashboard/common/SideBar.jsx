@@ -4,8 +4,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faAngleDoubleLeft, faDashboard, faMessage, faWarning, faBook, faEnvelope, faSignOut,
 } from '@fortawesome/free-solid-svg-icons';
-import Logo from '../../../assets/images/logo.png';
-import LogoutButton from '../LogoutButton';
+import Logo from '../../../../assets/images/logo.png';
+import LogoutButton from '../../LogoutButton';
+// import DashboardHeader from './DashboardHeader';
+import ActivityCard from '../activities/ActivityCard';
 
 const SideBar = ({ minimax }) => {
   // const [open, setOpen] = useState(false);
@@ -14,9 +16,17 @@ const SideBar = ({ minimax }) => {
   const [isBloodRequest, setIsBloodRequest] = useState(false);
   const [isDonationHistory, setIsDonationHistory] = useState(false);
   const [isRequestHistory, setIsRequestHistory] = useState(false);
+  const [isRecentActivity, setIsRecentActivity] = useState(false);
 
   const openDonate = () => {
     setIsDonate(!isDonate);
+    setIsBloodRequest(false);
+    setIsDonationHistory(false);
+    setIsRequestHistory(false);
+  };
+
+  const openRecentActivity = () => {
+    setIsRecentActivity(true);
     setIsBloodRequest(false);
     setIsDonationHistory(false);
     setIsRequestHistory(false);
@@ -46,6 +56,7 @@ const SideBar = ({ minimax }) => {
   return (
     <div className="sidebar">
       <header className="flex fixed z-10">
+        {/* <DashboardHeader /> */}
         <nav
           className={`${sideBarState ? 'w-60' : 'w-0'} 
         h-screen p-5 pt-8 bg-[#17a2b8] duration-300 z-1 relative`}
@@ -71,6 +82,13 @@ const SideBar = ({ minimax }) => {
                 <FontAwesomeIcon icon={faMessage} />
                 {' '}
                 {sideBarState && (<p>Message</p>)}
+              </button>
+            </li>
+            <li className="mt-5 hover:bg-[#fff] hover:text-[#17a2b8] hover:p-2 rounded-[12px]">
+              <button type="button" onClick={openRecentActivity} className="flex gap-5 items-center">
+                <FontAwesomeIcon icon={faMessage} />
+                {' '}
+                {sideBarState && (<p>Recent Activities</p>)}
               </button>
             </li>
             <li className="my-5 hover:bg-[#fff] hover:text-[#17a2b8] hover:p-2 rounded-[12px]">
@@ -102,6 +120,9 @@ const SideBar = ({ minimax }) => {
           </ul>
         </nav>
       </header>
+      <section>
+        {isRecentActivity && (<ActivityCard />)}
+      </section>
     </div>
   );
 };
