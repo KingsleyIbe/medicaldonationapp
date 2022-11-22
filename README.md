@@ -120,7 +120,8 @@ Give a ⭐️ if you like this project!
 - [myidentitypass](https://myidentitypass.com/) for giving us this opportunity to their API feature
 - The amazing mentor for making us improve every day 👍
 
-❓ FAQ
+## ❓ FAQ
+
 We glad to answer some of your questions here:
 
 - What is Life Force?
