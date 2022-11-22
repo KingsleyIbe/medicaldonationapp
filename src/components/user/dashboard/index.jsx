@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import DashboardHeader from './DashboardHeader';
 // import HistorySummary from './HistorySummary';
-import SideBar from './SideBar';
-import UserCards from './UserCards';
+import SideBar from './common/SideBar';
+import UserCards from './common/UserCards';
 
 const UserDashBoard = () => {
   const [open, setOpen] = useState(true);
@@ -13,7 +13,7 @@ const UserDashBoard = () => {
   };
 
   return (
-    <div className="">
+    <div className="relative">
       <SideBar minimax={openModal} />
       <div className={`${open ? 'lg:ml-[300px]' : 'ml-[100px]'} `}>
         <DashboardHeader />
