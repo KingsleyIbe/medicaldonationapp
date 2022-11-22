@@ -8,7 +8,6 @@ const DonateItem = () => {
   const openModal = () => {
     setOpen(!open);
     localStorage.setItem('sideBarState', open);
-    console.log(open);
   };
 
   return (
