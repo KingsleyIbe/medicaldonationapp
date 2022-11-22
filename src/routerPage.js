@@ -8,6 +8,7 @@ import FeedbackPage from './pages/user/FeedbackPage';
 import HelpPage from './pages/user/HelpPage';
 import KYCPage from './pages/user/KYCPage';
 import MessagePage from './pages/user/MessagePage';
+import PolicyPage from './pages/user/PolicyPage';
 import RecentActivitiesPage from './pages/user/RecentActivitiesPage';
 
 const RouterPage = () => (
@@ -21,7 +22,7 @@ const RouterPage = () => (
       <Route exact path="/dashboard/message" element={<MessagePage />} />
       <Route exact path="/dashboard/recent-activities" element={<RecentActivitiesPage />} />
       <Route exact path="/dashboard/help" element={<HelpPage />} />
-      <Route exact path="/dashboard/policy" element={<DashboardPage />} />
+      <Route exact path="/dashboard/policy" element={<PolicyPage />} />
       <Route exact path="/dashboard/feedback" element={<FeedbackPage />} />
       <Route exact path="/faq" element={<FaqPage />} />
       <Route exact path="*" element={<h1>PAGE NOT FOUND</h1>} />
