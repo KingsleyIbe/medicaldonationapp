@@ -4,7 +4,7 @@ import DashboardHeader from './DashboardHeader';
 import SideBar from './common/SideBar';
 import UserCards from './common/UserCards';
 
-const UserDashBoard = () => {
+const RequestItem = () => {
   const [open, setOpen] = useState(true);
   const openModal = () => {
     setOpen(!open);
@@ -24,4 +24,4 @@ const UserDashBoard = () => {
   );
 };
 
-export default UserDashBoard;
+export default RequestItem;
