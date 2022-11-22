@@ -7,6 +7,7 @@ import DonateItemPage from './pages/user/DonateItemPage';
 import FeedbackPage from './pages/user/FeedbackPage';
 import HelpPage from './pages/user/HelpPage';
 import KYCPage from './pages/user/KYCPage';
+import MessagePage from './pages/user/MessagePage';
 import RecentActivitiesPage from './pages/user/RecentActivitiesPage';
 
 const RouterPage = () => (
@@ -17,7 +18,7 @@ const RouterPage = () => (
       <Route exact path="/dashboard" element={<DashboardPage />} />
       <Route exact path="/dashboard/donate-item" element={<DonateItemPage />} />
       <Route exact path="/dashboard/request-item" element={<DashboardPage />} />
-      <Route exact path="/dashboard/message" element={<DashboardPage />} />
+      <Route exact path="/dashboard/message" element={<MessagePage />} />
       <Route exact path="/dashboard/recent-activities" element={<RecentActivitiesPage />} />
       <Route exact path="/dashboard/help" element={<HelpPage />} />
       <Route exact path="/dashboard/policy" element={<DashboardPage />} />
