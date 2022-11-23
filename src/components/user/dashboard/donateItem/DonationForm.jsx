@@ -5,7 +5,10 @@ import { v4 as uuidv4 } from 'uuid';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
 import {
-  faUser, faUserTie, faLock, faEnvelope, faLocation, faPhone, faHeartCirclePlus, faTimes,
+  faUser, faUserTie, faEnvelope, faLocation,
+  faPhone, faHeartCirclePlus, faTimes, faArrowUpFromWaterPump,
+  faArrowUpRightDots, faWeightScale, faPeopleArrows, faQuestionCircle,
+  faLeaf, faCartShopping, faCalendarCheck,
 } from '@fortawesome/free-solid-svg-icons';
 
 const DonationForm = () => {
@@ -111,37 +114,54 @@ const DonationForm = () => {
                 <input type="text" required placeholder="What is your HIV status?" value={formData.hivStatus} name="hivStatus" onChange={onChange} />
               </label>
               <label htmlFor="gender" className="register-input-bolder flex flex-row gap-4 items-center my-5 p-2">
-                <FontAwesomeIcon icon={faLock} className="opacity-[0.2]" />
-                <input type="text" required placeholder="What is your gender?" value={formData.gender} name="gender" onChange={onChange} />
+                <FontAwesomeIcon icon={faPeopleArrows} className="opacity-[0.2]" />
+                <span className="opacity-[0.5]">Select Gender</span>
+                <select value={formData.gender} onChange={onChange} name="gender">
+                  <option value="Choose Gender">Choose Gender</option>
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+                </select>
               </label>
             </div>
             <div>
               <label htmlFor="Age" className="register-input-bolder flex flex-row gap-4 items-center p-2">
-                <FontAwesomeIcon icon={faUser} className="opacity-[0.2]" />
+                <FontAwesomeIcon icon={faArrowUpRightDots} className="opacity-[0.2]" />
                 <input type="text" required placeholder="How old are you?" value={formData.age} name="age" onChange={onChange} />
               </label>
               <label htmlFor="weight" className="register-input-bolder flex flex-row gap-4 items-center my-5 p-2">
-                <FontAwesomeIcon icon={faUserTie} className="opacity-[0.2]" />
+                <FontAwesomeIcon icon={faWeightScale} className="opacity-[0.2]" />
                 <input type="text" required placeholder="What do you weigh? e.g 50kg" value={formData.weight} name="weight" onChange={onChange} />
               </label>
               <label htmlFor="blood" className="register-input-bolder flex flex-row gap-4 items-center my-5 p-2">
-                <FontAwesomeIcon icon={faEnvelope} className="opacity-[0.2]" />
+                <FontAwesomeIcon icon={faArrowUpFromWaterPump} className="opacity-[0.2]" />
                 <input type="text" required placeholder="what is your blood group?" value={formData.bloodGroup} name="bloodGroup" onChange={onChange} />
               </label>
               <label htmlFor="itemUpdate" className="register-input-bolder flex flex-row gap-4 items-center my-5 p-2">
-                <FontAwesomeIcon icon={faLock} className="opacity-[0.2]" />
-                <input type="text" required placeholder="Have you made similar donation before?" value={formData.donatedBefore} name="donatedBefore" onChange={onChange} />
+                <FontAwesomeIcon icon={faQuestionCircle} className="opacity-[0.2]" />
+                <span className="opacity-[0.5]">Have you made similar donation before?</span>
+                <select value={formData.donatedBefore} name="donatedBefore" onChange={onChange}>
+                  <option value="Select">Select</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                </select>
               </label>
               <label htmlFor="Genotype" className="register-input-bolder flex flex-row gap-4 items-center my-5 p-2">
-                <FontAwesomeIcon icon={faLock} className="opacity-[0.2]" />
-                <input type="text" required placeholder="What is your Genotype?" value={formData.genotype} name="genotype" onChange={onChange} />
+                <FontAwesomeIcon icon={faLeaf} className="opacity-[0.2]" />
+                <span className="opacity-[0.5]">What is your Genotype?</span>
+                <select value={formData.genotype} name="genotype" onChange={onChange}>
+                  <option className="opacity-[0.5]" value="Select">Select</option>
+                  <option value="AA">AA</option>
+                  <option value="AS">AS</option>
+                  <option value="SS">SS</option>
+                  <option value="AC">AC</option>
+                </select>
               </label>
               <label htmlFor="donationItem" className="register-input-bolder flex flex-row gap-4 items-center my-5 p-2">
-                <FontAwesomeIcon icon={faLock} className="opacity-[0.2]" />
+                <FontAwesomeIcon icon={faCartShopping} className="opacity-[0.2]" />
                 <input type="text" placeholder="What item do you want to donation? " value={formData.donationItem} name="donationItem" onChange={onChange} />
               </label>
               <label htmlFor="available" className="register-input-bolder flex flex-row gap-4 items-center my-5 p-2">
-                <FontAwesomeIcon icon={faLock} className="opacity-[0.2]" />
+                <FontAwesomeIcon icon={faCalendarCheck} className="opacity-[0.2]" />
                 <input type="date" required placeholder="What is your earliest available date? " value={formData.availableDate} name="availableDate" onChange={onChange} />
               </label>
             </div>
