@@ -4,7 +4,10 @@ import { v4 as uuidv4 } from 'uuid';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
 import {
-  faUser, faUserTie, faLock, faEnvelope, faTimes,
+  faUser, faUserTie, faEnvelope, faLocation,
+  faPhone, faHeartCirclePlus, faTimes, faArrowUpFromWaterPump,
+  faArrowUpRightDots, faWeightScale, faPeopleArrows, faQuestionCircle,
+  faLeaf, faCartShopping, faCalendarCheck,
 } from '@fortawesome/free-solid-svg-icons';
 
 const RequestForm = () => {
@@ -98,49 +101,49 @@ const RequestForm = () => {
                 <input type="email" required placeholder="Email" value={formData.email} name="email" onChange={onChange} />
               </label>
               <label htmlFor="item" className="register-input-bolder flex flex-row gap-4 items-center my-5 p-2">
-                <FontAwesomeIcon icon={faLock} className="opacity-[0.2]" />
+                <FontAwesomeIcon icon={faCartShopping} className="opacity-[0.2]" />
                 <input type="text" required placeholder="What item are you requesting for?" value={formData.requestItem} name="requestItem" onChange={onChange} />
               </label>
               <label htmlFor="gender" className="register-input-bolder flex flex-row gap-4 items-center my-5 p-2">
-                <FontAwesomeIcon icon={faLock} className="opacity-[0.2]" />
+                <FontAwesomeIcon icon={faPeopleArrows} className="opacity-[0.2]" />
                 <input type="text" required placeholder="What is your gender" value={formData.gender} name="gender" onChange={onChange} />
               </label>
               <label htmlFor="phone" className="register-input-bolder flex flex-row gap-4 items-center my-5 p-2">
-                <FontAwesomeIcon icon={faLock} className="opacity-[0.2]" />
+                <FontAwesomeIcon icon={faPhone} className="opacity-[0.2]" />
                 <input type="text" required placeholder="Phone eg.234 567890" value={formData.phone} name="phone" onChange={onChange} />
               </label>
               <label htmlFor="age" className="register-input-bolder flex flex-row gap-4 items-center my-5 p-2">
-                <FontAwesomeIcon icon={faLock} className="opacity-[0.2]" />
+                <FontAwesomeIcon icon={faArrowUpRightDots} className="opacity-[0.2]" />
                 <input type="text" required placeholder="How old are you?" value={formData.age} name="age" onChange={onChange} />
               </label>
             </div>
             <div>
               <label htmlFor="blood" className="register-input-bolder flex flex-row gap-4 items-center my-5 p-2">
-                <FontAwesomeIcon icon={faLock} className="opacity-[0.2]" />
+                <FontAwesomeIcon icon={faArrowUpFromWaterPump} className="opacity-[0.2]" />
                 <input type="text" required placeholder="What is your blood group?" value={formData.bloodGroup} name="bloodGroup" onChange={onChange} />
               </label>
               <label htmlFor="Genotype" className="register-input-bolder flex flex-row gap-4 items-center p-2">
-                <FontAwesomeIcon icon={faUser} className="opacity-[0.2]" />
+                <FontAwesomeIcon icon={faLeaf} className="opacity-[0.2]" />
                 <input type="text" required placeholder="What's your Genotype?" value={formData.genotype} name="genotype" onChange={onChange} />
               </label>
               <label htmlFor="HivStatus" className="register-input-bolder flex flex-row gap-4 items-center my-5 p-2">
-                <FontAwesomeIcon icon={faUserTie} className="opacity-[0.2]" />
+                <FontAwesomeIcon icon={faHeartCirclePlus} className="opacity-[0.2]" />
                 <input type="text" required placeholder="What's your HIV status" value={formData.hivStatus} name="hivStatus" onChange={onChange} />
               </label>
               <label htmlFor="weight" className="register-input-bolder flex flex-row gap-4 items-center my-5 p-2">
-                <FontAwesomeIcon icon={faEnvelope} className="opacity-[0.2]" />
+                <FontAwesomeIcon icon={faWeightScale} className="opacity-[0.2]" />
                 <input type="text" required placeholder="What do you weigh?" value={formData.weight} name="weight" onChange={onChange} />
               </label>
               <label htmlFor="requestedBefore" className="register-input-bolder flex flex-row gap-4 items-center my-5 p-2">
-                <FontAwesomeIcon icon={faLock} className="opacity-[0.2]" />
+                <FontAwesomeIcon icon={faQuestionCircle} className="opacity-[0.2]" />
                 <input type="text" required placeholder="Have you made similar donation before?" value={formData.requestedBefore} name="requestedBefore" onChange={onChange} />
               </label>
               <label htmlFor="Location" className="register-input-bolder flex flex-row gap-4 items-center my-5 p-2">
-                <FontAwesomeIcon icon={faLock} className="opacity-[0.2]" />
+                <FontAwesomeIcon icon={faLocation} className="opacity-[0.2]" />
                 <input type="text" required placeholder="What is your Location?" value={formData.location} name="location" onChange={onChange} />
               </label>
               <label htmlFor="availableDate" className="register-input-bolder flex flex-row gap-4 items-center my-5 p-2">
-                <FontAwesomeIcon icon={faLock} className="opacity-[0.2]" />
+                <FontAwesomeIcon icon={faCalendarCheck} className="opacity-[0.2]" />
                 <input type="date" placeholder="What date do you need this item?" value={formData.availableDate} name="availableDate" onChange={onChange} />
               </label>
             </div>
