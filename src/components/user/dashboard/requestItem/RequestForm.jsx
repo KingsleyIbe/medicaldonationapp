@@ -106,7 +106,12 @@ const RequestForm = () => {
               </label>
               <label htmlFor="gender" className="register-input-bolder flex flex-row gap-4 items-center my-5 p-2">
                 <FontAwesomeIcon icon={faPeopleArrows} className="opacity-[0.2]" />
-                <input type="text" required placeholder="What is your gender" value={formData.gender} name="gender" onChange={onChange} />
+                <span className="opacity-[0.5]">What is your gender?</span>
+                <select value={formData.gender} onChange={onChange} name="gender">
+                  <option value="Choose Gender">Choose Gender</option>
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+                </select>
               </label>
               <label htmlFor="phone" className="register-input-bolder flex flex-row gap-4 items-center my-5 p-2">
                 <FontAwesomeIcon icon={faPhone} className="opacity-[0.2]" />
@@ -124,7 +129,14 @@ const RequestForm = () => {
               </label>
               <label htmlFor="Genotype" className="register-input-bolder flex flex-row gap-4 items-center p-2">
                 <FontAwesomeIcon icon={faLeaf} className="opacity-[0.2]" />
-                <input type="text" required placeholder="What's your Genotype?" value={formData.genotype} name="genotype" onChange={onChange} />
+                <span className="opacity-[0.5]">What is your Genotype?</span>
+                <select value={formData.genotype} name="genotype" onChange={onChange}>
+                  <option className="opacity-[0.5]" value="Select">Select</option>
+                  <option value="AA">AA</option>
+                  <option value="AS">AS</option>
+                  <option value="SS">SS</option>
+                  <option value="AC">AC</option>
+                </select>
               </label>
               <label htmlFor="HivStatus" className="register-input-bolder flex flex-row gap-4 items-center my-5 p-2">
                 <FontAwesomeIcon icon={faHeartCirclePlus} className="opacity-[0.2]" />
@@ -136,7 +148,12 @@ const RequestForm = () => {
               </label>
               <label htmlFor="requestedBefore" className="register-input-bolder flex flex-row gap-4 items-center my-5 p-2">
                 <FontAwesomeIcon icon={faQuestionCircle} className="opacity-[0.2]" />
-                <input type="text" required placeholder="Have you made similar donation before?" value={formData.requestedBefore} name="requestedBefore" onChange={onChange} />
+                <span className="opacity-[0.5]">Have you made similar donation before?</span>
+                <select value={formData.donatedBefore} name="donatedBefore" onChange={onChange}>
+                  <option value="Select">Select</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                </select>
               </label>
               <label htmlFor="Location" className="register-input-bolder flex flex-row gap-4 items-center my-5 p-2">
                 <FontAwesomeIcon icon={faLocation} className="opacity-[0.2]" />
