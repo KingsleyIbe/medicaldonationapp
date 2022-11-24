@@ -1,5 +1,5 @@
 import {
-  faDashboard, faMessage, faWarning, faBook, faEnvelope,
+  faDashboard, faMessage, faWarning, faBook, faEnvelope, faHandHoldingMedical,
 } from '@fortawesome/free-solid-svg-icons';
 
 const Data = [
@@ -13,7 +13,7 @@ const Data = [
     id: 2,
     title: 'Donate Item',
     to: '/dashboard/donate-item',
-    icon: faDashboard,
+    icon: faHandHoldingMedical,
   },
   {
     id: 3,
