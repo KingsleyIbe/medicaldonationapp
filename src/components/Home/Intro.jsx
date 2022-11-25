@@ -10,14 +10,14 @@ const Intro = () => (
     <div>
       <img src={PageCover} alt="Page cover" className="lg:w-[100%] lg:h-[70%] opacity-[0.5]" />
     </div>
-    <div className="absolute top-0 lg:top-[100px] lg:left-[40%] left-0">
-      <h1 className="lg:text-[45px] text-[35px] font-bold lg:max-w-[50%] text-center my-5">Someone needs Blood every two seconds</h1>
-      <p className="lg:max-w-[50%] text-center my-5">
+    <div className="absolute top-0 lg:top-[100px] lg:left-[40%] sm:top-[100px] sm:left-[40%]   md:top-[100px] md:left-[40%]  left-0">
+      <h1 className="lg:text-[45px] md:text-[45px] sm:text-[45px] text-[35px] font-bold lg:max-w-[60%] md:max-w-[50%] sm:max-w-[50%] max-w-[100%] text-center my-5">Someone needs Blood every two seconds</h1>
+      <p className="lg:max-w-[60%] md:max-w-[50%] sm:max-w-[50%]  max-w-[100%] text-center my-5">
         Nigeria collects only 500,000 pints yearly,
         which represent only 36.7% of blood donation
         capacity. You can help make up for the 73.3% shortfall.
       </p>
-      <span className="flex flex-row gap-[100px] mt-[50px] lg:mt-[100px] justify-between lg:justify-center px-5">
+      <span className="flex flex-row gap-[100px] mt-0 md:mt-[100px] sm:mt-[100px] lg:mt-[100px] justify-between lg:justify-start md:justify-center sm:justify-center px-5">
         <button type="button" className="bg-[#17a2b8] text-[#fff] px-[21px] py-[12px] rounded-[8px]"> Donate and Earn</button>
         <button type="button" className="bg-[#17a2b8] text-[#fff] px-[21px] py-[12px] rounded-[8px]"> Learn More</button>
       </span>
