@@ -4,6 +4,7 @@ import HistorySummary from './HistorySummaryComp';
 import SideBar from '../common/SideBar';
 import UserCards from '../common/UserCards';
 import UserUpload from './UserUpload';
+import UserDetails from './UserDetails';
 
 const RequestItem = () => {
   const [open, setOpen] = useState(true);
@@ -19,7 +20,10 @@ const RequestItem = () => {
         <DashboardHeader />
         <HistorySummary />
         <UserCards />
-        <UserUpload />
+        <div className="flex flex-row gap-10">
+          <UserUpload />
+          <UserDetails />
+        </div>
       </div>
     </div>
   );
