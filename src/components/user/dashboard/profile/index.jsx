@@ -3,6 +3,7 @@ import DashboardHeader from '../DashboardHeader';
 import HistorySummary from './HistorySummaryComp';
 import SideBar from '../common/SideBar';
 import UserCards from '../common/UserCards';
+import UserUpload from './UserUpload';
 
 const RequestItem = () => {
   const [open, setOpen] = useState(true);
@@ -18,6 +19,7 @@ const RequestItem = () => {
         <DashboardHeader />
         <HistorySummary />
         <UserCards />
+        <UserUpload />
       </div>
     </div>
   );
