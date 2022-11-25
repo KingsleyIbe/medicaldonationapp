@@ -1,5 +1,5 @@
 import React from 'react';
-import UserDashBoard from '../../components/user/dashboard';
+import UserDashBoard from '../../components/user/dashboard/profile';
 
 const DashboardPage = () => (
   <div>
