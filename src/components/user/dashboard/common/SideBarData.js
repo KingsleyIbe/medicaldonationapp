@@ -1,13 +1,14 @@
 import {
-  faDashboard, faMessage, faWarning, faBook, faEnvelope, faHandHoldingMedical,
+  faUser, faMessage, faWarning,
+  faBook, faEnvelope, faHandHoldingMedical, faCodePullRequest,
 } from '@fortawesome/free-solid-svg-icons';
 
 const Data = [
   {
     id: 1,
-    title: 'Dashboard',
+    title: 'User Profile',
     to: '/dashboard/summary',
-    icon: faDashboard,
+    icon: faUser,
   },
   {
     id: 2,
@@ -19,7 +20,7 @@ const Data = [
     id: 3,
     title: 'Request Item',
     to: '/dashboard/request-item',
-    icon: faMessage,
+    icon: faCodePullRequest,
   },
   {
     id: 4,

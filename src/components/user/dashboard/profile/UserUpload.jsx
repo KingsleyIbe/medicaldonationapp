@@ -19,7 +19,7 @@ const UserUpload = () => {
   };
 
   return (
-    <div className="border border-1-solid p-5">
+    <div className="border border-1-solid p-5 mb-10">
       {imageUrls.length !== 0 ? imageUrls.map((imageSrc) => (
         <div className="">
           <img src={imageSrc} alt="" className="rounded-[100%] border border-1-solid mb-5 max-w-[150px] max-h-[80px]" />
