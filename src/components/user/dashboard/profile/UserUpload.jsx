@@ -1,25 +1,36 @@
 /* eslint-disable react/jsx-key */
 import React, { useState, useEffect } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUser } from '@fortawesome/free-solid-svg-icons';
 
 const UserUpload = () => {
-  const [images, setImage] = useState([]);
+  const [image, setImage] = useState([]);
   const [imageUrls, setImageUrls] = useState([]);
 
   useEffect(() => {
-    if (images.length < 1) return;
+    if (image.length < 1) return;
     const newImageUrls = [];
-    images.forEach((image) => newImageUrls.push(URL.createObjectURL(image)));
+    image.forEach((image) => newImageUrls.push(URL.createObjectURL(image)));
     setImageUrls(newImageUrls);
-  }, [images]);
+  }, [image]);
+
   const onImageChange = (e) => {
     setImage([...e.target.files]);
   };
+
   return (
     <div>
-      {imageUrls.map((imageSrc) => (
-        <img src={imageSrc} alt="" className="rounded-[100%] max-w-[40px] mb-5" />
-      ))}
-      <input type="file" accept={images} onChange={onImageChange} />
+      {imageUrls.length !== 0 ? imageUrls.map((imageSrc) => (
+        <div className="">
+          <img src={imageSrc} alt="" className="rounded-[100%] border border-1-solid mb-5 max-w-[150px] max-h-[80px]" />
+        </div>
+      )) : (
+        <div className="rounded-[100%] bg-[#ccc] border border-1-solid p-5 max-w-[100px] mb-5">
+          <FontAwesomeIcon icon={faUser} className="text-[60px] opacity-[0.2] w-[100%] m-auto" />
+        </div>
+      )}
+      <p className="opacity-[0.5]">Upload a different photo</p>
+      <input type="file" accept={image} onChange={onImageChange} />
     </div>
   );
 };
