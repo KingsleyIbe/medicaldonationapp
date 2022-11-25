@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import DashboardHeader from './DashboardHeader';
-import HistorySummary from './historySummary/HistorySummaryComp';
-import SideBar from './common/SideBar';
-import UserCards from './common/UserCards';
+import DashboardHeader from '../DashboardHeader';
+import HistorySummary from './HistorySummaryComp';
+import SideBar from '../common/SideBar';
+import UserCards from '../common/UserCards';
 
 const RequestItem = () => {
   const [open, setOpen] = useState(true);
