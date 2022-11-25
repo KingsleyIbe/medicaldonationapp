@@ -6,9 +6,21 @@ import organ1 from '../../assets/images/organ1.png';
 import lock1 from '../../assets/images/lock1.png';
 
 const Intro = () => (
-  <div className="text-[#5c0e0e]">
+  <div className="text-[#5c0e0e] relative">
     <div>
-      <img src={PageCover} alt="Page cover" className="lg:w-[100%] lg:h-[70%]" />
+      <img src={PageCover} alt="Page cover" className="lg:w-[100%] lg:h-[70%] opacity-[0.5]" />
+    </div>
+    <div className="absolute top-0 lg:top-[100px] lg:left-[40%] left-0">
+      <h1 className="lg:text-[45px] text-[35px] font-bold lg:max-w-[50%] text-center my-5">Someone needs Blood every two seconds</h1>
+      <p className="lg:max-w-[50%] text-center my-5">
+        Nigeria collects only 500,000 pints yearly,
+        which represent only 36.7% of blood donation
+        capacity. You can help make up for the 73.3% shortfall.
+      </p>
+      <span className="flex flex-row gap-[100px] mt-[50px] lg:mt-[100px] justify-between lg:justify-center px-5">
+        <button type="button" className="bg-[#17a2b8] text-[#fff] px-[21px] py-[12px] rounded-[8px]"> Donate and Earn</button>
+        <button type="button" className="bg-[#17a2b8] text-[#fff] px-[21px] py-[12px] rounded-[8px]"> Learn More</button>
+      </span>
     </div>
     <div className="flex lg:flex-row flex-col gap-10 lg:mt-[100px] mt-[30px] px-10">
       <div className="flex flex-col max-h-[20%]">
