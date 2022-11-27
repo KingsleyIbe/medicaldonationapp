@@ -6,7 +6,7 @@ import Contact from './ContactUs';
 const ContactUs = () => (
   <div>
     <Header />
-    <div className="relative top-[150px] lg:top-[200px]">
+    <div className="relative mt-10">
       <Contact />
       <Footer />
     </div>
