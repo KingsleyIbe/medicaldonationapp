@@ -3,9 +3,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-  faBolt, faLinkedin,
-  faTwitter, faGithub, faInstagram, faFacebook,
+  faBolt,
 } from '@fortawesome/free-solid-svg-icons';
+import {
+  faFacebook, faLinkedin, faGithub, faInstagram, faTwitter,
+} from '@fortawesome/free-brands-svg-icons';
 import Doctors from '../../assets/images/doctors.jpg';
 
 const About = () => (
@@ -97,11 +99,11 @@ const About = () => (
             incidunt neque blanditiis facilis laboriosam dolores debitis assumenda quisquam
             tenetur officiis minus ipsam.
           </p>
-          <div className="flex flex-row gap-5 items-center text-center text-[25px] text-[#17a2b8]">
+          <div className="flex flex-row gap-5 items-center text-center text-[25px] text-[#17a2b8] mt-2">
             <a href="https://www.linkedin.com/in/kingsley-ibe/" target="__blank"><FontAwesomeIcon icon={faLinkedin} /></a>
             <a href="https://web.facebook.com/ibekingsley.chibueze/" target="__blank"><FontAwesomeIcon icon={faFacebook} /></a>
-            <a href="https://twitter.com/ibekingsley2" target="__blank"><FontAwesomeIcon icon={faInstagram} /></a>
             <a href="https://twitter.com/ibekingsley2" target="__blank"><FontAwesomeIcon icon={faTwitter} /></a>
+            <a href="https://twitter.com/ibekingsley2" target="__blank"><FontAwesomeIcon icon={faInstagram} /></a>
             <a href="https://github.com/KingsleyIbe" target="__blank"><FontAwesomeIcon icon={faGithub} /></a>
           </div>
         </div>
@@ -118,8 +120,8 @@ const About = () => (
           <div className="flex flex-row gap-5 items-center text-center text-[25px] text-[#17a2b8]">
             <a href="https://www.linkedin.com/in/michael-david-oyenuga" target="__blank"><FontAwesomeIcon icon={faLinkedin} /></a>
             <a href="https://www.linkedin.com/in/michael-david-oyenuga" target="__blank"><FontAwesomeIcon icon={faFacebook} /></a>
-            <a href="https://twitter.com/David_Gahd" target="__blank"><FontAwesomeIcon icon={faInstagram} /></a>
             <a href="https://twitter.com/David_Gahd" target="__blank"><FontAwesomeIcon icon={faTwitter} /></a>
+            <a href="https://twitter.com/David_Gahd" target="__blank"><FontAwesomeIcon icon={faInstagram} /></a>
             <a href="https://github.com/Gahdloot" target="__blank"><FontAwesomeIcon icon={faGithub} /></a>
           </div>
         </div>
@@ -136,8 +138,8 @@ const About = () => (
           <div className="flex flex-row gap-5 items-center text-center text-[25px] text-[#17a2b8]">
             <a href="https://www.linkedin.com/in/josephine-bonka-250263207" target="__blank"><FontAwesomeIcon icon={faLinkedin} /></a>
             <a href="https://www.linkedin.com/in/josephine-bonka-250263207" target="__blank"><FontAwesomeIcon icon={faFacebook} /></a>
-            <a href="https://twitter.com/josephineeng2" target="__blank"><FontAwesomeIcon icon={faInstagram} /></a>
             <a href="https://twitter.com/josephineeng2" target="__blank"><FontAwesomeIcon icon={faTwitter} /></a>
+            <a href="https://twitter.com/josephineeng2" target="__blank"><FontAwesomeIcon icon={faInstagram} /></a>
             <a href="https://github.com/josephineEng" target="__blank"><FontAwesomeIcon icon={faGithub} /></a>
           </div>
         </div>
@@ -154,15 +156,15 @@ const About = () => (
           <div className="flex flex-row gap-5 items-center text-center text-[25px] text-[#17a2b8]">
             <a href="https://www.linkedin.com/in/adiousman/" target="__blank"><FontAwesomeIcon icon={faLinkedin} /></a>
             <a href="https://www.linkedin.com/in/adiousman/" target="__blank"><FontAwesomeIcon icon={faFacebook} /></a>
-            <a href="https://twitter.com/usafod" target="__blank"><FontAwesomeIcon icon={faInstagram} /></a>
             <a href="https://twitter.com/usafod" target="__blank"><FontAwesomeIcon icon={faTwitter} /></a>
+            <a href="https://twitter.com/usafod" target="__blank"><FontAwesomeIcon icon={faInstagram} /></a>
             <a href="https://github.com/usafod" target="__blank"><FontAwesomeIcon icon={faGithub} /></a>
           </div>
         </div>
       </div>
       <div className="flex flex-row justify-between contact-border p-10 my-5 text-[#A03]">
         <h3 className="text-[25px]">We are with you in every step of your donation</h3>
-        <Link to="/contact" className="px-[21px] py-[12px] rounded-[6px] text-[#A03] bg-[#17a2b8]"><button type="button">Conact Us</button></Link>
+        <Link to="/contact" className="px-[21px] py-[12px] rounded-[6px] text-[#A03] bg-[#17a2b8]"><button type="button">Contact Us</button></Link>
       </div>
     </div>
   </div>
