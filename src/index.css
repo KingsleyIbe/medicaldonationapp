@@ -116,3 +116,7 @@ table tr td:nth-child(3) {
 .contact-input {
   background: rgba(72, 72, 106, 0.13);
 }
+
+.disc {
+  list-style-type: disc !important;
+}
