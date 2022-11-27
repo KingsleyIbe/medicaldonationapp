@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import PageCover from '../../assets/images/home1.png';
 import patient1 from '../../assets/images/patient1.png';
 import better11 from '../../assets/images/better11.png';
@@ -19,7 +20,7 @@ const Intro = () => (
       </p>
       <span className="flex flex-row gap-[100px] mt-0 md:mt-[100px] sm:mt-[100px] lg:mt-[100px] justify-between lg:justify-start md:justify-center sm:justify-center px-5">
         <button type="button" className="bg-[#17a2b8] text-[#fff] px-[21px] py-[12px] rounded-[8px]"> Donate and Earn</button>
-        <button type="button" className="bg-[#17a2b8] text-[#fff] px-[21px] py-[12px] rounded-[8px]"> Learn More</button>
+        <Link to="/about"><button type="button" className="bg-[#17a2b8] text-[#fff] px-[21px] py-[12px] rounded-[8px]"> Learn More</button></Link>
       </span>
     </div>
     <div className="flex lg:flex-row flex-col gap-10 lg:mt-[100px] mt-[30px] px-10">

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
+import AboutPage from './pages/about/AboutPage';
 import FaqPage from './pages/faq/FaqPage';
 import LandingPage from './pages/landingPage/landingPage';
 import DashboardPage from './pages/user/DashboardPage';
@@ -26,6 +27,7 @@ const RouterPage = () => (
       <Route exact path="/dashboard/policy" element={<PolicyPage />} />
       <Route exact path="/dashboard/feedback" element={<FeedbackPage />} />
       <Route exact path="/faq" element={<FaqPage />} />
+      <Route exact path="/about" element={<AboutPage />} />
       <Route exact path="*" element={<h1>PAGE NOT FOUND</h1>} />
     </Routes>
   </>

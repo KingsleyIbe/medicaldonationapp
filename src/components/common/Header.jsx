@@ -13,6 +13,7 @@ const Header = () => (
           </Link>
           <ul className="flex gap-5 items-center absolute right-0">
             <li className="hover:text-[#FFC01D]"><LoginButton /></li>
+            <li className="hover:text-[#FFC01D]"><Link to="/about">About</Link></li>
             <li className="hover:text-[#FFC01D]"><Link to="/faq">FAQ</Link></li>
           </ul>
 
