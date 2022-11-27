@@ -12,21 +12,21 @@ const ContactUs = () => (
       <div>
         <form action="https://formspree.io/f/mgeqzkkb" method="POST" className="mb-10">
           <div className="lg:flex md:flex sm:flex flex-row gap-5">
-            <label htmlFor="firstName" className="mt-10 text-[#303A42] grid">
+            <label htmlFor="firstName" className="mt-10 grid text-[#17a2b8]">
               First name
               <input type="text" name="firstName" required placeholder="First name" className="my-2 border-none contact-input p-2 rounded-[8px]" />
             </label>
-            <label htmlFor="secondName" className="grid mt-10 text-[#303A42]">
+            <label htmlFor="secondName" className="grid mt-10 text-[#17a2b8]">
               Second name
               <input type="text" name="secondName" required placeholder="Second name" className="my-2 border-none contact-input p-2 rounded-[8px]" />
             </label>
           </div>
           <div className="">
-            <label htmlFor="email" className="grid mt-10 text-[#303A42]">
+            <label htmlFor="email" className="grid mt-10 text-[#17a2b8]">
               Email
               <input type="email" name="email" required placeholder="Ex example@email.com" className="my-2 border-none contact-input p-2 rounded-[8px]" />
             </label>
-            <label htmlFor="message" className="grid mt-10 text-[#303A42]">
+            <label htmlFor="message" className="grid mt-10 text-[#17a2b8]">
               What can we help you with?
               <textarea type="text" name="message" required placeholder="Type your message here" className="my-2 border-none contact-input p-2 rounded-[8px]" rows="8" cols="50" maxLength="200" />
             </label>
@@ -35,7 +35,7 @@ const ContactUs = () => (
         </form>
       </div>
       <div className="md:mb-[145px] md:mt-[100px] sm:mb-[145px] sm:mt-[100px]">
-        <div className="text-center">
+        <div className="text-center text-[#17a2b8]">
           <p>
             We would be happy to hear from you,
             Please fill in the form below or mail us your enquiries to

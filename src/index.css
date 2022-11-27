@@ -120,3 +120,7 @@ table tr td:nth-child(3) {
 .disc {
   list-style-type: disc !important;
 }
+
+.contact-border {
+  border: 2px solid #17a2b8;
+}
