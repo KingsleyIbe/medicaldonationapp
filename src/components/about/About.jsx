@@ -117,7 +117,7 @@ const About = () => (
             incidunt neque blanditiis facilis laboriosam dolores debitis assumenda quisquam
             tenetur officiis minus ipsam.
           </p>
-          <div className="flex flex-row gap-5 items-center text-center text-[25px] text-[#17a2b8]">
+          <div className="flex flex-row gap-5 items-center text-center text-[25px] text-[#17a2b8] mt-2">
             <a href="https://www.linkedin.com/in/michael-david-oyenuga" target="__blank"><FontAwesomeIcon icon={faLinkedin} /></a>
             <a href="https://www.linkedin.com/in/michael-david-oyenuga" target="__blank"><FontAwesomeIcon icon={faFacebook} /></a>
             <a href="https://twitter.com/David_Gahd" target="__blank"><FontAwesomeIcon icon={faTwitter} /></a>
@@ -135,7 +135,7 @@ const About = () => (
             incidunt neque blanditiis facilis laboriosam dolores debitis assumenda quisquam
             tenetur officiis minus ipsam.
           </p>
-          <div className="flex flex-row gap-5 items-center text-center text-[25px] text-[#17a2b8]">
+          <div className="flex flex-row gap-5 items-center text-center text-[25px] text-[#17a2b8] mt-2">
             <a href="https://www.linkedin.com/in/josephine-bonka-250263207" target="__blank"><FontAwesomeIcon icon={faLinkedin} /></a>
             <a href="https://www.linkedin.com/in/josephine-bonka-250263207" target="__blank"><FontAwesomeIcon icon={faFacebook} /></a>
             <a href="https://twitter.com/josephineeng2" target="__blank"><FontAwesomeIcon icon={faTwitter} /></a>
@@ -153,7 +153,7 @@ const About = () => (
             incidunt neque blanditiis facilis laboriosam dolores debitis assumenda quisquam
             tenetur officiis minus ipsam.
           </p>
-          <div className="flex flex-row gap-5 items-center text-center text-[25px] text-[#17a2b8]">
+          <div className="flex flex-row gap-5 items-center text-center text-[25px] text-[#17a2b8] mt-2">
             <a href="https://www.linkedin.com/in/adiousman/" target="__blank"><FontAwesomeIcon icon={faLinkedin} /></a>
             <a href="https://www.linkedin.com/in/adiousman/" target="__blank"><FontAwesomeIcon icon={faFacebook} /></a>
             <a href="https://twitter.com/usafod" target="__blank"><FontAwesomeIcon icon={faTwitter} /></a>
