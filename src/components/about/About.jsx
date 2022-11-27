@@ -100,11 +100,11 @@ const About = () => (
             tenetur officiis minus ipsam.
           </p>
           <div className="flex flex-row gap-5 items-center text-center text-[25px] text-[#17a2b8] mt-2">
-            <a href="https://www.linkedin.com/in/kingsley-ibe/" target="__blank"><FontAwesomeIcon icon={faLinkedin} /></a>
-            <a href="https://web.facebook.com/ibekingsley.chibueze/" target="__blank"><FontAwesomeIcon icon={faFacebook} /></a>
-            <a href="https://twitter.com/ibekingsley2" target="__blank"><FontAwesomeIcon icon={faTwitter} /></a>
-            <a href="https://twitter.com/ibekingsley2" target="__blank"><FontAwesomeIcon icon={faInstagram} /></a>
-            <a href="https://github.com/KingsleyIbe" target="__blank"><FontAwesomeIcon icon={faGithub} /></a>
+            <a href="https://www.linkedin.com/in/kingsley-ibe/" className="hover:text-[#A03]" target="__blank"><FontAwesomeIcon icon={faLinkedin} /></a>
+            <a href="https://web.facebook.com/ibekingsley.chibueze/" className="hover:text-[#A03]" target="__blank"><FontAwesomeIcon icon={faFacebook} /></a>
+            <a href="https://twitter.com/ibekingsley2" className="hover:text-[#A03]" target="__blank"><FontAwesomeIcon icon={faTwitter} /></a>
+            <a href="https://twitter.com/ibekingsley2" className="hover:text-[#A03]" target="__blank"><FontAwesomeIcon icon={faInstagram} /></a>
+            <a href="https://github.com/KingsleyIbe" className="hover:text-[#A03]" target="__blank"><FontAwesomeIcon icon={faGithub} /></a>
           </div>
         </div>
         <div className="bg-[#fff] border border-1-solid rounded-[8px] p-10 text-center">
@@ -118,11 +118,11 @@ const About = () => (
             tenetur officiis minus ipsam.
           </p>
           <div className="flex flex-row gap-5 items-center text-center text-[25px] text-[#17a2b8] mt-2">
-            <a href="https://www.linkedin.com/in/michael-david-oyenuga" target="__blank"><FontAwesomeIcon icon={faLinkedin} /></a>
-            <a href="https://www.linkedin.com/in/michael-david-oyenuga" target="__blank"><FontAwesomeIcon icon={faFacebook} /></a>
-            <a href="https://twitter.com/David_Gahd" target="__blank"><FontAwesomeIcon icon={faTwitter} /></a>
-            <a href="https://twitter.com/David_Gahd" target="__blank"><FontAwesomeIcon icon={faInstagram} /></a>
-            <a href="https://github.com/Gahdloot" target="__blank"><FontAwesomeIcon icon={faGithub} /></a>
+            <a href="https://www.linkedin.com/in/michael-david-oyenuga" className="hover:text-[#A03]" target="__blank"><FontAwesomeIcon icon={faLinkedin} /></a>
+            <a href="https://www.linkedin.com/in/michael-david-oyenuga" className="hover:text-[#A03]" target="__blank"><FontAwesomeIcon icon={faFacebook} /></a>
+            <a href="https://twitter.com/David_Gahd" className="hover:text-[#A03]" target="__blank"><FontAwesomeIcon icon={faTwitter} /></a>
+            <a href="https://twitter.com/David_Gahd" className="hover:text-[#A03]" target="__blank"><FontAwesomeIcon icon={faInstagram} /></a>
+            <a href="https://github.com/Gahdloot" className="hover:text-[#A03]" target="__blank"><FontAwesomeIcon icon={faGithub} /></a>
           </div>
         </div>
         <div className="bg-[#fff] border border-1-solid rounded-[8px] p-10 text-center">
@@ -136,11 +136,11 @@ const About = () => (
             tenetur officiis minus ipsam.
           </p>
           <div className="flex flex-row gap-5 items-center text-center text-[25px] text-[#17a2b8] mt-2">
-            <a href="https://www.linkedin.com/in/josephine-bonka-250263207" target="__blank"><FontAwesomeIcon icon={faLinkedin} /></a>
-            <a href="https://www.linkedin.com/in/josephine-bonka-250263207" target="__blank"><FontAwesomeIcon icon={faFacebook} /></a>
-            <a href="https://twitter.com/josephineeng2" target="__blank"><FontAwesomeIcon icon={faTwitter} /></a>
-            <a href="https://twitter.com/josephineeng2" target="__blank"><FontAwesomeIcon icon={faInstagram} /></a>
-            <a href="https://github.com/josephineEng" target="__blank"><FontAwesomeIcon icon={faGithub} /></a>
+            <a href="https://www.linkedin.com/in/josephine-bonka-250263207" className="hover:text-[#A03]" target="__blank"><FontAwesomeIcon icon={faLinkedin} /></a>
+            <a href="https://www.linkedin.com/in/josephine-bonka-250263207" className="hover:text-[#A03]" target="__blank"><FontAwesomeIcon icon={faFacebook} /></a>
+            <a href="https://twitter.com/josephineeng2" className="hover:text-[#A03]" target="__blank"><FontAwesomeIcon icon={faTwitter} /></a>
+            <a href="https://twitter.com/josephineeng2" className="hover:text-[#A03]" target="__blank"><FontAwesomeIcon icon={faInstagram} /></a>
+            <a href="https://github.com/josephineEng" className="hover:text-[#A03]" target="__blank"><FontAwesomeIcon icon={faGithub} /></a>
           </div>
         </div>
         <div className="bg-[#fff] border border-1-solid rounded-[8px] p-10 text-center">
@@ -154,17 +154,17 @@ const About = () => (
             tenetur officiis minus ipsam.
           </p>
           <div className="flex flex-row gap-5 items-center text-center text-[25px] text-[#17a2b8] mt-2">
-            <a href="https://www.linkedin.com/in/adiousman/" target="__blank"><FontAwesomeIcon icon={faLinkedin} /></a>
-            <a href="https://www.linkedin.com/in/adiousman/" target="__blank"><FontAwesomeIcon icon={faFacebook} /></a>
-            <a href="https://twitter.com/usafod" target="__blank"><FontAwesomeIcon icon={faTwitter} /></a>
-            <a href="https://twitter.com/usafod" target="__blank"><FontAwesomeIcon icon={faInstagram} /></a>
-            <a href="https://github.com/usafod" target="__blank"><FontAwesomeIcon icon={faGithub} /></a>
+            <a href="https://www.linkedin.com/in/adiousman/" className="hover:text-[#A03]" target="__blank"><FontAwesomeIcon icon={faLinkedin} /></a>
+            <a href="https://www.linkedin.com/in/adiousman/" className="hover:text-[#A03]" target="__blank"><FontAwesomeIcon icon={faFacebook} /></a>
+            <a href="https://twitter.com/usafod" className="hover:text-[#A03]" target="__blank"><FontAwesomeIcon icon={faTwitter} /></a>
+            <a href="https://twitter.com/usafod" className="hover:text-[#A03]" target="__blank"><FontAwesomeIcon icon={faInstagram} /></a>
+            <a href="https://github.com/usafod" className="hover:text-[#A03]" target="__blank"><FontAwesomeIcon icon={faGithub} /></a>
           </div>
         </div>
       </div>
       <div className="flex flex-row justify-between contact-border p-10 my-5 text-[#A03]">
         <h3 className="text-[25px]">We are with you in every step of your donation</h3>
-        <Link to="/contact" className="px-[21px] py-[12px] rounded-[6px] text-[#A03] bg-[#17a2b8]"><button type="button">Contact Us</button></Link>
+        <Link to="/contact" className="px-[21px] py-[12px] rounded-[6px] text-[#fff] bg-[#17a2b8] hover:text-[#fff] hover:bg-[#A03]"><button type="button">Contact Us</button></Link>
       </div>
     </div>
   </div>
