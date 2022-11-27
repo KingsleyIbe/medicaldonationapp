@@ -7,7 +7,7 @@ import group from '../../assets/images/group.png';
 
 const ContactUs = () => (
   <section className="px-10 w-[100%]">
-    <div><h1 className="font-bold text-[35px] mb-[50px] text-center">Contact Us</h1></div>
+    <div><h1 className="font-bold text-[35px] text-[#17a2b8] mb-[50px] text-center">Contact Us</h1></div>
     <div className="lg:flex gap-10">
       <div>
         <form action="https://formspree.io/f/mgeqzkkb" method="POST" className="mb-10">
