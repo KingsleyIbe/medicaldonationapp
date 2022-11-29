@@ -6,7 +6,7 @@ import React from 'react';
 const DashboardHeader = () => {
   const { user, isAuthenticated } = useAuth0();
   return (
-    <div className="lg:ml-[300px] ml-0 lg:block flex flex-col items-center justify-center pt-4 ">
+    <div className="lg:block flex flex-col items-center justify-center pt-4 ">
       <header className="flex flex-row items-center justify-between gap-2 lg:gap-0">
         <div className="flex flex-row items-center gap-5 border border-1-solid rounded-[12px] p-2">
           <FontAwesomeIcon icon={faSearch} className="opacity-[0.3]" />

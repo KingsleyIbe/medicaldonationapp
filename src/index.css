@@ -112,3 +112,15 @@ table tr td:nth-child(3) {
 .set-overflow li p {
   max-width: 100%;
 }
+
+.contact-input {
+  background: rgba(72, 72, 106, 0.13);
+}
+
+.disc {
+  list-style-type: disc !important;
+}
+
+.contact-border {
+  border: 2px solid #17a2b8;
+}
