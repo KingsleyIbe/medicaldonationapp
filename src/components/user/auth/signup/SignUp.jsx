@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import Medical from '../../../../assets/images/medical.jpg';
 import HospitalSignUp from './HospitalSignUp';
 import IndividualSignUp from './IndividualSignUp';
@@ -47,6 +48,9 @@ const SignUp = () => {
             </div>
             {individual && <IndividualSignUp />}
             {hospital && <HospitalSignUp />}
+          </div>
+          <div className="text-center text-[#A03] hover:underline">
+            <Link to="/sign-in">Already have an account? sign in</Link>
           </div>
         </div>
       </div>

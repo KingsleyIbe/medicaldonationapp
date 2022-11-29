@@ -77,7 +77,7 @@ const HospitalSignUp = () => {
         </div>
 
         <div className="flex flex-col items-center justify-center my-5 p-2">
-          <button type="submit" className="rounded-[8px] px-[21px] py-[12px] bg-[#17a2b8] w-[100%] text-[#fff]">Submit</button>
+          <button type="submit" className="rounded-[8px] px-[21px] py-[12px] bg-[#17a2b8] w-[100%] text-[#fff] hover:border hover:text-[#17a2b8] hover:bg-[#fff]">Submit</button>
         </div>
       </form>
     </div>
