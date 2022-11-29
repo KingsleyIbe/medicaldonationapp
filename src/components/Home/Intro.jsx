@@ -19,7 +19,7 @@ const Intro = () => (
         capacity. You can help make up for the 73.3% shortfall.
       </p>
       <span className="flex flex-row gap-[100px] mt-0 md:mt-[100px] sm:mt-[100px] lg:mt-[100px] justify-between lg:justify-start md:justify-center sm:justify-center px-5">
-        <button type="button" className="bg-[#17a2b8] text-[#fff] px-[21px] py-[12px] rounded-[8px]"> Donate and Earn</button>
+        <button type="button" className="bg-[#17a2b8] text-[#fff] px-[21px] py-[12px] rounded-[8px]"> Donate and save a life</button>
         <Link to="/about"><button type="button" className="bg-[#17a2b8] text-[#fff] px-[21px] py-[12px] rounded-[8px]"> Learn More</button></Link>
       </span>
     </div>

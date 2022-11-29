@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import LoginButton from '../user/LoginButton';
 import Logo from '../../assets/images/logo.png';
 
 const Header = () => (
@@ -12,10 +11,10 @@ const Header = () => (
             <h4>Life Force</h4>
           </Link>
           <ul className="flex gap-5 items-center absolute right-0">
-            <li className="hover:text-[#FFC01D]"><LoginButton /></li>
             <li className="hover:text-[#FFC01D]"><Link to="/about">About</Link></li>
             <li className="hover:text-[#FFC01D]"><Link to="/contact">Contact Us</Link></li>
             <li className="hover:text-[#FFC01D]"><Link to="/faq">FAQ</Link></li>
+            <li className="hover:text-[#FFC01D]"><Link to="/sign-up">Sign In</Link></li>
           </ul>
 
         </div>
