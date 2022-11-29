@@ -26,7 +26,7 @@ const VerifiedMessage = () => {
           <p>Your Virtual NIN has been verified successfully</p>
         </div>
         <div className="mt-2 opacity-[0.8] mb-10 flex flex-col justify-center items-center">
-          <Link to="/dashboard" className="underline">Proceed to your dashboard</Link>
+          <Link to="/dashboard/summary" className="underline">Proceed to your dashboard</Link>
         </div>
       </div>
       )}
