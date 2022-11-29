@@ -13,12 +13,14 @@ import MessagePage from './pages/user/MessagePage';
 import PolicyPage from './pages/user/PolicyPage';
 import RecentActivitiesPage from './pages/user/RecentActivitiesPage';
 import RequestItemPage from './pages/user/RequestItemPage';
+import SignInPage from './pages/user/SignInPage';
 import SignUpPage from './pages/user/SignUpPage';
 
 const RouterPage = () => (
   <>
     <Routes>
       <Route path="/" element={<LandingPage />} />
+      <Route path="/sign-in" element={<SignInPage />} />
       <Route path="/sign-up" element={<SignUpPage />} />
       <Route exact path="/kyc" element={<KYCPage />} />
       <Route exact path="/dashboard/summary" element={<DashboardPage />} />

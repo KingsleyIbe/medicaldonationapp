@@ -14,7 +14,7 @@ const Header = () => (
             <li className="hover:text-[#FFC01D]"><Link to="/about">About</Link></li>
             <li className="hover:text-[#FFC01D]"><Link to="/contact">Contact Us</Link></li>
             <li className="hover:text-[#FFC01D]"><Link to="/faq">FAQ</Link></li>
-            <li className="hover:text-[#FFC01D]"><Link to="/sign-up">Sign In</Link></li>
+            <li className="hover:text-[#FFC01D]"><Link to="/sign-in">Sign In</Link></li>
           </ul>
 
         </div>
