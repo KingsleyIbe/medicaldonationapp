@@ -1,9 +1,11 @@
 import React from 'react';
 import Header from '../../../common/Header';
+import SignUp from './SignUp';
 
 const index = () => (
-  <div>
+  <div className="">
     <Header />
+    <SignUp />
   </div>
 );
 
