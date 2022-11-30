@@ -13,7 +13,6 @@ import {
 const HospitalSignUp = () => {
   const [data, setData] = useState([]);
   const navigate = useNavigate();
-  // const [dobInfo, setDobInfo] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -52,8 +51,6 @@ const HospitalSignUp = () => {
     } else {
       navigate('/sign-in');
     }
-    console.log(data);
-    console.log(formData);
   };
 
   return (

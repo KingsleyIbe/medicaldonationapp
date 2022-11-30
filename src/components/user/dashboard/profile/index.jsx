@@ -5,6 +5,7 @@ import SideBar from '../common/SideBar';
 import UserCards from '../common/UserCards';
 import UserUpload from './UserUpload';
 import UserDetails from './UserDetails';
+import MobileHeader from '../../../common/MobileHeader';
 
 const RequestItem = () => {
   const [open, setOpen] = useState(true);
@@ -15,6 +16,7 @@ const RequestItem = () => {
 
   return (
     <div className="relative">
+      <MobileHeader />
       <SideBar minimax={openModal} />
       <div className={`${open ? 'lg:ml-[265px]' : 'ml-[100px]'} `}>
         <DashboardHeader />

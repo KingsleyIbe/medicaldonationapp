@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import Logo from '../../assets/images/logo.png';
 
 const Header = () => (
-  <header className="text-[#A00]">
+  <header className="text-[#A00] hidden lg:block">
     <div className="bg-[#fff] p-5">
       <nav className="">
         <div className="flex gap-5 items-center relative">

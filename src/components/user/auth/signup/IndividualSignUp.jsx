@@ -55,8 +55,6 @@ const IndividualSignUp = () => {
     } else {
       navigate('/sign-in');
     }
-    console.log(data);
-    console.log(formData);
   };
 
   return (

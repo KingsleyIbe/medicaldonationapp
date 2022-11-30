@@ -7,8 +7,8 @@ import organ1 from '../../assets/images/organ1.png';
 import lock1 from '../../assets/images/lock1.png';
 
 const Intro = () => (
-  <div className="text-[#5c0e0e] relative">
-    <div>
+  <div className="text-[#5c0e0e]">
+    <div className="">
       <img src={PageCover} alt="Page cover" className="lg:w-[100%] lg:h-[70%] opacity-[0.5]" />
     </div>
     <div className="absolute top-0 lg:top-[100px] lg:left-[40%] sm:top-[100px] sm:left-[40%]   md:top-[100px] md:left-[40%]  left-0">
