@@ -1,5 +1,12 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
+// import BoardAdmin from './components/BoardAdmin';
+// import BoardModerator from './components/BoardModerator';
+// import BoardUser from './components/BoardUser';
+// import Home from './components/Home';
+// import Login from './components/Login';
+// import Profile from './components/Profile';
+// import Register from './components/Register';
 import AboutPage from './pages/about/AboutPage';
 import ContactPage from './pages/contact/ContactPage';
 import FaqPage from './pages/faq/FaqPage';
@@ -35,6 +42,14 @@ const RouterPage = () => (
       <Route exact path="/about" element={<AboutPage />} />
       <Route exact path="/contact" element={<ContactPage />} />
       <Route exact path="*" element={<h1>PAGE NOT FOUND</h1>} />
+
+      {/* <Route exact path="/home" element={<Home />} />
+      <Route exact path="/login" element={<Login />} />
+      <Route exact path="/register" element={<Register />} />
+      <Route exact path="/profile" element={<Profile />} />
+      <Route path="/user" element={<BoardUser />} />
+      <Route path="/mod" element={<BoardModerator />} />
+      <Route path="/admin" element={<BoardAdmin />} /> */}
     </Routes>
   </>
 );

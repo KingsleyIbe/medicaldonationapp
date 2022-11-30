@@ -8,3 +8,4 @@
 *.flow filter=lfs diff=lfs merge=lfs -text
 *.mjs filter=lfs diff=lfs merge=lfs -text
 *.png filter=lfs diff=lfs merge=lfs -text
+*.eslintcache filter=lfs diff=lfs merge=lfs -text

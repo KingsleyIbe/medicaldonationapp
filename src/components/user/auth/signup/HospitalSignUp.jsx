@@ -1,5 +1,7 @@
+/* eslint-disable consistent-return */
 /* eslint-disable jsx-a11y/control-has-associated-label */
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { useQuery } from '@tanstack/react-query';
 import Axios from 'axios';
 import { v4 as uuidv4 } from 'uuid';
@@ -10,16 +12,17 @@ import {
 
 const HospitalSignUp = () => {
   const [data, setData] = useState([]);
+  const navigate = useNavigate();
   // const [dobInfo, setDobInfo] = useState(false);
   const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: '',
+    name: '',
     email: '',
-    dob: '',
+    id: '',
+    createdAt: data.createdAt,
     password: '',
     confirmPassword: '',
     zipCode: '',
-    category: 'individual',
+    category: 'hospital',
     userId: uuidv4(),
   });
 
@@ -30,21 +33,28 @@ const HospitalSignUp = () => {
     }));
   };
 
-  // const headers = {
-  //   'Content-Type': 'application/json',
-  // };
-
-  const url = 'https://62c2abb8ff594c656761de49.mockapi.io/users';
+  const url = 'https://62c2abb8ff594c656761de49.mockapi.io/hospitalUsers';
   const fetchData = () => {
     Axios.post(url, formData).then((res) => setData(res?.data));
   };
   const { isLoading, isError } = useQuery(['user'], fetchData);
+  const [validation, setValidation] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
     fetchData();
+    if (formData.name.length < 3 || formData.name.length > 20) {
+      setValidation('nameError');
+    } else if (formData.password !== formData.confirmPassword) {
+      setValidation('password mismatch');
+    } else if (formData.zipCode.length < 5 || formData.zipCode.length > 8) {
+      setValidation('invalid zip code');
+    } else {
+      navigate('/kyc');
+    }
     console.log(data);
     console.log(formData);
+    console.log(isError);
   };
 
   return (
@@ -53,10 +63,11 @@ const HospitalSignUp = () => {
       {isError && <p className="px-5 text-[#A03] mt-5">An error occur!</p>}
       <form onSubmit={handleSubmit}>
         <div className="flex flex-col gap-2 items-center p-5 rounded-[12px]">
-          <label htmlFor="First Name" className="register-input-bolder flex flex-row gap-4 items-center p-2">
+          <label htmlFor="hospitalName" className="register-input-bolder flex flex-row gap-4 items-center p-2">
             <FontAwesomeIcon icon={faHospital} className="opacity-[0.2]" />
-            <input type="text" required placeholder="Hospital Name" value={formData.hospitalName} name="hospitalName" onChange={onChange} />
+            <input type="text" required placeholder="Hospital Name" value={formData.name} name="name" onChange={onChange} />
           </label>
+          {validation === 'nameError' && <p className="text-[#A03] text-[10px]">The hospital name must be between 3 and 30 characters.</p>}
           <label htmlFor="email" className="register-input-bolder flex flex-row gap-4 items-center p-2">
             <FontAwesomeIcon icon={faEnvelope} className="opacity-[0.2]" />
             <input type="email" required placeholder="Official Email" value={formData.email} name="email" onChange={onChange} />
@@ -65,6 +76,7 @@ const HospitalSignUp = () => {
             <FontAwesomeIcon icon={faLocation} className="opacity-[0.2]" />
             <input type="number" required placeholder="Zip code" value={formData.zipCode} name="zipCode" onChange={onChange} />
           </label>
+          {validation === 'invalid zip code' && <p className="text-[#A03] text-[10px]">Invalid zip code! </p>}
           <label htmlFor="password" className="max-w-[100%] register-input-bolder flex flex-row items-center p-2">
             <FontAwesomeIcon icon={faHeartCirclePlus} className="opacity-[0.2] mr-1" />
             <input type="password" required placeholder="Enter your password" value={formData.password} name="password" onChange={onChange} className="max-w-[100%]" />
@@ -74,6 +86,7 @@ const HospitalSignUp = () => {
             <FontAwesomeIcon icon={faHeartCirclePlus} className="opacity-[0.2]" />
             <input type="password" required placeholder="Repeat your password" value={formData.confirmPassword} name="confirmPassword" onChange={onChange} />
           </label>
+          {validation === 'password mismatch' && <p className="text-[#A03] text-[10px]">Password do not match</p>}
         </div>
 
         <div className="flex flex-col items-center justify-center my-5 p-2">
