@@ -23,7 +23,7 @@ const UnVerifiedMessage = () => {
         </div>
         <div className="p-5 text-center">
           <h1 className="font-bold text-[30px]">Sorry!</h1>
-          <p>We couldn&#39;t verify your virtual NIN at the moment</p>
+          <p>We couldn&#39;t verify your credentials at the moment</p>
         </div>
         <div className="mt-2 opacity-[0.8] mb-10 flex flex-col justify-center items-center">
           <Link to="/kyc" className="underline">Try Again</Link>

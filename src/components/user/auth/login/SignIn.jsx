@@ -19,11 +19,11 @@ const SignIn = () => {
 
   return (
     <div className="lg:h-[100vh]">
-      <div className="flex lg:flex-row gap-0">
-        <div className="">
+      <div className="flex md:flex-row lg:flex-row gap-0">
+        <div className="hidden lg:block md:block sm:block">
           <img src={Medical} alt="Medical" className="" />
         </div>
-        <div className="">
+        <div className="w-[100%]">
           <div className="">
             <div className="text-center w-[100%] p-5 bg-[#17a2b8] text-[#fff] px-10">
               <h1 className="lg:text-[25px]">Sign Me In</h1>

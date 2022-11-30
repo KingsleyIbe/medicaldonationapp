@@ -18,7 +18,7 @@ const HospitalSignUp = () => {
     name: '',
     email: '',
     id: '',
-    createdAt: data.createdAt,
+    createdAt: data?.createdAt,
     password: '',
     confirmPassword: '',
     zipCode: '',
@@ -45,12 +45,12 @@ const HospitalSignUp = () => {
     fetchData();
     if (formData.name.length < 3 || formData.name.length > 20) {
       setValidation('nameError');
-    } else if (formData.password !== formData.confirmPassword) {
-      setValidation('password mismatch');
     } else if (formData.zipCode.length < 5 || formData.zipCode.length > 8) {
       setValidation('invalid zip code');
+    } else if (formData.password !== formData.confirmPassword) {
+      setValidation('password mismatch');
     } else {
-      navigate('/kyc');
+      navigate('/sign-in');
     }
     console.log(data);
     console.log(formData);

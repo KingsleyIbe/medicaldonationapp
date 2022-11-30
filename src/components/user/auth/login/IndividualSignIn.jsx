@@ -1,24 +1,19 @@
+/* eslint-disable array-callback-return */
 /* eslint-disable jsx-a11y/control-has-associated-label */
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useQuery } from '@tanstack/react-query';
 import Axios from 'axios';
-import { v4 as uuidv4 } from 'uuid';
+// import { v4 as uuidv4 } from 'uuid';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faHeartCirclePlus, faEye } from '@fortawesome/free-solid-svg-icons';
 
 const IndividualSignIn = () => {
   const [data, setData] = useState([]);
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: '',
     email: '',
-    dob: '',
     password: '',
-    confirmPassword: '',
-    zipCode: '',
-    category: 'individual',
-    userId: uuidv4(),
   });
 
   const onChange = (e) => {
@@ -34,31 +29,41 @@ const IndividualSignIn = () => {
 
   const url = 'https://62c2abb8ff594c656761de49.mockapi.io/users';
   const fetchData = () => {
-    Axios.post(url, formData).then((res) => setData(res?.data));
+    Axios.get(url).then((res) => setData(res?.data));
   };
-  const { isLoading, isError } = useQuery(['user'], fetchData);
+  const { isLoading } = useQuery(['user'], fetchData);
+  const [validation, setValidation] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
     fetchData();
-    console.log(data);
-    console.log(formData);
+    data?.map((user) => {
+      if (user.email === formData.email && user.password === formData.password) {
+        const loginDetails = { userId: user?.userId, signIn: true, category: user?.category };
+        localStorage.setItem('loginDetails', JSON.stringify(loginDetails));
+        navigate('/kyc');
+      } else {
+        setValidation('login Error');
+      }
+    });
   };
 
   return (
     <div>
       {isLoading && <p className="px-5 text-[#A03] mt-5">Loading...</p>}
-      {isError && <p className="px-5 text-[#A03] mt-5">An error occur!</p>}
-      <form onSubmit={handleSubmit}>
+      {validation === 'login Error' && <p className="text-[#A03] px-5 mt-5 text-[10px]">Wrong email or password</p>}
+      <form onSubmit={handleSubmit} className="w-[100%]">
         <div className="flex flex-col gap-2 items-center p-5 rounded-[12px]">
-          <label htmlFor="email" className="register-input-bolder flex flex-row gap-4 items-center p-2">
+          <label htmlFor="email" className="register-input-bolder flex flex-row gap-4 items-center p-2 w-[100%]">
             <FontAwesomeIcon icon={faEnvelope} className="opacity-[0.2]" />
             <input type="email" required placeholder="Email" value={formData.email} name="email" onChange={onChange} />
           </label>
-          <label htmlFor="password" className="register-input-bolder flex flex-row items-center p-2">
-            <FontAwesomeIcon icon={faHeartCirclePlus} className="opacity-[0.2] mr-1" />
-            <input type="password" required placeholder="Enter your password" value={formData.password} name="password" onChange={onChange} />
-            <button type="button"><FontAwesomeIcon icon={faEye} className="opacity-[0.2]" /></button>
+          <label htmlFor="password" className="register-input-bolder flex flex-row items-center p-2 w-[100%]">
+            <FontAwesomeIcon icon={faHeartCirclePlus} className="opacity-[0.2] mr-4" />
+            <span className="flex flex-row justify-between items-center w-[100%]">
+              <input type="password" required placeholder="Enter your password" value={formData.password} name="password" onChange={onChange} className="w-[100%]" />
+              <button type="button"><FontAwesomeIcon icon={faEye} className="opacity-[0.2]" /></button>
+            </span>
           </label>
           <div className="text-center text-[#A03] flex flex-col">
             <button type="button" className="hover:underline">Forget your password?</button>

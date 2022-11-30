@@ -3,12 +3,14 @@ import CACForm from './CACForm';
 import NINForm from './NINForm';
 
 const Form = () => {
-  const isHospital = false;
+  const category = localStorage.getItem('loginDetails');
+  JSON.parse(category);
+  console.log(category);
 
   return (
     <div className="flex flex-col justify-center items-center px-5 lg:px-0 mb-10">
       {
-      isHospital ? (
+      category?.category !== 'individual' ? (
         <CACForm />
       ) : (
         <NINForm />
