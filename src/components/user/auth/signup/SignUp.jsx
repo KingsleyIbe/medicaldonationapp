@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import Medical from '../../../../assets/images/medical.jpg';
 import HospitalSignUp from './HospitalSignUp';
 import IndividualSignUp from './IndividualSignUp';
@@ -21,11 +20,11 @@ const SignUp = () => {
 
   return (
     <div className="lg:h-[100vh]">
-      <div className="flex lg:flex-row gap-0">
-        <div className="">
+      <div className="flex md:flex-row lg:flex-row gap-0">
+        <div className="hidden lg:block md:block sm:block">
           <img src={Medical} alt="Medical" className="" />
         </div>
-        <div className="">
+        <div className="w-[100%]">
           <div className="">
             <div className="text-center w-[100%] p-5 bg-[#17a2b8] text-[#fff] px-10">
               <h1 className="lg:text-[25px]">Create My Account</h1>
@@ -48,9 +47,6 @@ const SignUp = () => {
             </div>
             {individual && <IndividualSignUp />}
             {hospital && <HospitalSignUp />}
-          </div>
-          <div className="text-center text-[#A03] hover:underline">
-            <Link to="/sign-in">Already have an account? sign in</Link>
           </div>
         </div>
       </div>

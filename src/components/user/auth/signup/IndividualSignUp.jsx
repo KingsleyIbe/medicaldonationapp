@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/control-has-associated-label */
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { useQuery } from '@tanstack/react-query';
 import Axios from 'axios';
 import { v4 as uuidv4 } from 'uuid';
@@ -64,21 +64,21 @@ const IndividualSignUp = () => {
       {isLoading && <p className="px-5 text-[#A03] mt-5">Loading...</p>}
       <form onSubmit={handleSubmit}>
         <div className="flex flex-col gap-2 items-center p-5 rounded-[12px]">
-          <label htmlFor="First Name" className="register-input-bolder flex flex-row gap-4 items-center p-2">
+          <label htmlFor="First Name" className="w-[100%] register-input-bolder flex flex-row gap-4 items-center p-2">
             <FontAwesomeIcon icon={faUser} className="opacity-[0.2]" />
             <input type="text" required placeholder="First Name" value={formData.firstName} name="firstName" onChange={onChange} />
           </label>
           {validation === 'first Name Error' && <p className="text-[#A03] text-[10px]">The first name must be between 3 and 30 characters.</p>}
-          <label htmlFor="Last Name" className="register-input-bolder flex flex-row gap-4 items-center p-2">
+          <label htmlFor="Last Name" className="w-[100%] register-input-bolder flex flex-row gap-4 items-center p-2">
             <FontAwesomeIcon icon={faUserTie} className="opacity-[0.2]" />
             <input type="text" required placeholder="Last Name" value={formData.lastName} name="lastName" onChange={onChange} />
           </label>
           {validation === 'last Name Error' && <p className="text-[#A03] text-[10px]">The last name must be between 3 and 30 characters.</p>}
-          <label htmlFor="email" className="register-input-bolder flex flex-row gap-4 items-center p-2">
+          <label htmlFor="email" className="w-[100%] register-input-bolder flex flex-row gap-4 items-center p-2">
             <FontAwesomeIcon icon={faEnvelope} className="opacity-[0.2]" />
             <input type="email" required placeholder="Email" value={formData.email} name="email" onChange={onChange} />
           </label>
-          <label htmlFor="zipCode" className="register-input-bolder flex flex-row gap-4 items-center p-2">
+          <label htmlFor="zipCode" className="w-[100%] register-input-bolder flex flex-row gap-4 items-center p-2">
             <FontAwesomeIcon icon={faLocation} className="opacity-[0.2]" />
             <input type="number" required placeholder="Zip code" value={formData.zipCode} name="zipCode" onChange={onChange} />
           </label>
@@ -104,18 +104,22 @@ const IndividualSignUp = () => {
               <input type="date" required placeholder="Date of birth" value={formData.dob} name="dob" onChange={onChange} />
             </span>
           </label>
-          <label htmlFor="password" className="register-input-bolder flex flex-row gap-4 items-center p-2">
+          <label htmlFor="password" className="w-[100%] register-input-bolder flex flex-row gap-4 items-center p-2">
             <FontAwesomeIcon icon={faHeartCirclePlus} className="opacity-[0.2]" />
-            <input type="password" required placeholder="Enter your password" value={formData.password} name="password" onChange={onChange} />
-            <button type="button"><FontAwesomeIcon icon={faEye} className="opacity-[0.2]" /></button>
+            <span className="flex flex-row justify-between items-center w-[100%]">
+              <input type="password" required placeholder="Enter your password" value={formData.password} name="password" onChange={onChange} className="w-[100%]" />
+              <button type="button"><FontAwesomeIcon icon={faEye} className="opacity-[0.2]" /></button>
+            </span>
           </label>
-          <label htmlFor="confirmPassword" className="register-input-bolder flex flex-row gap-4 items-center p-2">
+          <label htmlFor="confirmPassword" className="w-[100%] register-input-bolder flex flex-row gap-4 items-center p-2">
             <FontAwesomeIcon icon={faHeartCirclePlus} className="opacity-[0.2]" />
             <input type="password" required placeholder="Repeat your password" value={formData.confirmPassword} name="confirmPassword" onChange={onChange} />
           </label>
           {validation === 'password mismatch' && <p className="text-[#A03] text-[10px]">Password do not match</p>}
         </div>
-
+        <div className="text-center text-[#A03] hover:underline">
+          <Link to="/sign-in">Already have an account? sign in</Link>
+        </div>
         <div className="flex flex-col items-center justify-center my-5 p-2">
           <button type="submit" className="rounded-[8px] px-[21px] py-[12px] bg-[#17a2b8] w-[100%] text-[#fff] hover:border hover:text-[#17a2b8] hover:bg-[#fff]">Submit</button>
         </div>
