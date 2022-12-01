@@ -1,22 +1,14 @@
-import React, { useState } from 'react';
-import DashboardHeader from '../DashboardHeader';
-import SideBar from '../common/SideBar';
+import React from 'react';
+import Header from '../../../common/Header';
+import MobileHeader from '../../../common/MobileHeader';
+import PolicyDocs from './PolicyDocs';
 
-const Policy = () => {
-  const [open, setOpen] = useState(true);
-  const openModal = () => {
-    setOpen(!open);
-    localStorage.setItem('sideBarState', open);
-  };
-
-  return (
-    <div className="relative">
-      <SideBar minimax={openModal} />
-      <div className={`${open ? 'lg:ml-[300px]' : 'ml-[100px]'} `}>
-        <DashboardHeader />
-      </div>
-    </div>
-  );
-};
+const Policy = () => (
+  <div className="relative">
+    <Header />
+    <MobileHeader />
+    <PolicyDocs />
+  </div>
+);
 
 export default Policy;
