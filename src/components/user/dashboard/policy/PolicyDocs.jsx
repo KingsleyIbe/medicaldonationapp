@@ -151,7 +151,8 @@ const PolicyDocs = () => (
 
         </b>
         {' '}
-        refers to Life Force, accessible from <a href="/" className="underline" target="__blank">http://www.lifeforce.com</a>
+        refers to Life Force, accessible from
+        <a href="/" className="underline" target="__blank">http://www.lifeforce.com</a>
 
       </p>
       <p>
