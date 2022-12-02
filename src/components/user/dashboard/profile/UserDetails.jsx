@@ -1,18 +1,29 @@
 import React, { useState } from 'react';
+import DisplayDetails from './DisplayDetails';
 
 const UserDetails = () => {
-  const [form, setForm] = useState(false);
+  const [form, setForm] = useState(true);
   const [document, setDocument] = useState(false);
   const [others, setOthers] = useState(false);
+  const [bio, setBio] = useState(false);
 
   const displayForm = () => {
     setForm(true);
     setDocument(false);
     setOthers(false);
+    setBio(false);
   };
 
   const displayDocument = () => {
     setDocument(true);
+    setForm(false);
+    setOthers(false);
+    setBio(false);
+  };
+
+  const displayBio = () => {
+    setBio(true);
+    setDocument(false);
     setForm(false);
     setOthers(false);
   };
@@ -21,6 +32,7 @@ const UserDetails = () => {
     setOthers(true);
     setForm(false);
     setDocument(false);
+    setBio(false);
   };
 
   return (
@@ -28,6 +40,7 @@ const UserDetails = () => {
       <div className="flex flex-row gap-10 items-center bg-[#ccc] p-5 opacity-[0.6]">
         <button type="button" onClick={displayForm}>Form</button>
         <button type="button" onClick={displayDocument}>Documents</button>
+        <button type="button" onClick={displayBio}>User Bio</button>
         <button type="button" onClick={displayOthers}>others</button>
       </div>
       {form && (
@@ -78,8 +91,9 @@ const UserDetails = () => {
           </div>
         </form>
       )}
-      {document && (<h1>Document will appear here</h1>)}
-      {others && (<h1>Others will appear here</h1>)}
+      {document && (<div className="mb-10 border border-solid-1 p-5"><h1>Document will appear here</h1></div>)}
+      {bio && (<div className="mb-10 border border-solid-1 p-5 w-[100%]"><DisplayDetails /></div>)}
+      {others && (<div className="mb-10 border border-solid-1 p-5"><h1>Others will appear here</h1></div>)}
     </div>
   );
 };

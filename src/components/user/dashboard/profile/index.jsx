@@ -20,7 +20,7 @@ const RequestItem = () => {
       <div className={`${open ? 'lg:ml-[265px]' : 'ml-[100px]'} `}>
         <DashboardHeader />
         <HistorySummary />
-        <div className="flex flex-row gap-10">
+        <div className="flex flex-row gap-10 mt-10">
           <UserUpload />
           <UserDetails />
         </div>
