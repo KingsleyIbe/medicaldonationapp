@@ -6,7 +6,6 @@ import {
   faAngleDoubleLeft, faSignOut,
 } from '@fortawesome/free-solid-svg-icons';
 import Logo from '../../../../assets/images/logo.png';
-import LogoutButton from '../../LogoutButton';
 import Data from './SideBarData';
 
 const SideBar = ({ minimax }) => {
@@ -44,65 +43,9 @@ const SideBar = ({ minimax }) => {
               </li>
             </ul>
           ))}
-          {/* <ul className="text-[#fff]">
-            <li className="hover:bg-[#fff] hover:text-[#17a2b8] hover:p-2 rounded-[12px]">
-              <NavLink to="/dashboard" className="flex gap-5 items-center" style={navLinksStyles}>
-                <FontAwesomeIcon icon={faDashboard} />
-                {sideBarState && (<p>Dashboard</p>)}
-              </NavLink>
-            </li>
-            <li className="mt-5 hover:bg-[#fff] hover:text-[#17a2b8] hover:p-2 rounded-[12px]">
-              <NavLink to="/dashboard/donate-item" className="flex gap-5 items-center">
-                <FontAwesomeIcon icon={faMessage} />
-                {' '}
-                {sideBarState && (<p>Donate Item</p>)}
-              </NavLink>
-            </li>
-            <li className="mt-5 hover:bg-[#fff] hover:text-[#17a2b8] hover:p-2 rounded-[12px]">
-              <NavLink to="/dashboard/request-item" className="flex gap-5 items-center">
-                <FontAwesomeIcon icon={faMessage} />
-                {' '}
-                {sideBarState && (<p>Request Item</p>)}
-              </NavLink>
-            </li>
-            <li className="mt-5 hover:bg-[#fff] hover:text-[#17a2b8] hover:p-2 rounded-[12px]">
-              <NavLink to="/dashboard/message" className="flex gap-5 items-center">
-                <FontAwesomeIcon icon={faMessage} />
-                {' '}
-                {sideBarState && (<p>Message</p>)}
-              </NavLink>
-            </li>
-            <li className="mt-5 hover:bg-[#fff] hover:text-[#17a2b8] hover:p-2 rounded-[12px]">
-              <NavLink to="/dashboard/recent-activities" className="flex gap-5 items-center">
-                <FontAwesomeIcon icon={faMessage} />
-                {' '}
-                {sideBarState && (<p>Recent Activities</p>)}
-              </NavLink>
-            </li>
-            <li className="my-5 hover:bg-[#fff] hover:text-[#17a2b8] hover:p-2 rounded-[12px]">
-              <NavLink to="/dashboard/help" className="flex gap-5 items-center">
-                <FontAwesomeIcon icon={faWarning} />
-                {' '}
-                {sideBarState && (<p>Help</p>)}
-              </NavLink>
-            </li>
-            <li className="my-5 hover:bg-[#fff] hover:text-[#17a2b8] hover:p-2 rounded-[12px]">
-              <NavLink to="/dashboard/policy" className="flex gap-5 items-center">
-                <FontAwesomeIcon icon={faBook} />
-                {' '}
-                {sideBarState && (<p>Read Policy</p>)}
-              </NavLink>
-            </li>
-            <li className="hover:bg-[#fff] hover:text-[#17a2b8] hover:p-2 rounded-[12px]">
-              <NavLink to="/dashboard/feedback" className="flex gap-5 items-center">
-                <FontAwesomeIcon icon={faEnvelope} />
-                {' '}
-                {sideBarState && (<p>Provide Feedback</p>)}
-              </NavLink>
-            </li> */}
           <div className="mt-[100px] text-[#fff] flex flex-row gap-2 items-center hover:bg-[#fff] hover:text-[#17a2b8] hover:p-2 rounded-[12px]">
             <FontAwesomeIcon icon={faSignOut} />
-            {sideBarState && (<LogoutButton />)}
+            {sideBarState && (<button type="button">Sign Out</button>)}
 
           </div>
         </nav>

@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import DashboardHeader from '../DashboardHeader';
 import HistorySummary from './HistorySummaryComp';
 import SideBar from '../common/SideBar';
-import UserCards from '../common/UserCards';
 import UserUpload from './UserUpload';
 import UserDetails from './UserDetails';
 import MobileHeader from '../../../common/MobileHeader';
@@ -21,7 +20,6 @@ const RequestItem = () => {
       <div className={`${open ? 'lg:ml-[265px]' : 'ml-[100px]'} `}>
         <DashboardHeader />
         <HistorySummary />
-        <UserCards />
         <div className="flex flex-row gap-10">
           <UserUpload />
           <UserDetails />

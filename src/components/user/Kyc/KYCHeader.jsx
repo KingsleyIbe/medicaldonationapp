@@ -1,6 +1,5 @@
 import { useAuth0 } from '@auth0/auth0-react';
 import { Link } from 'react-router-dom';
-import LogoutButton from '../LogoutButton';
 import Logo from '../../../assets/images/logo.png';
 
 const KycHeader = () => {
@@ -16,7 +15,7 @@ const KycHeader = () => {
             </Link>
             {isAuthenticated && (
             <ul className="flex gap-5 items-center absolute right-0">
-              <li className="hover:text-[#FFC01D]"><LogoutButton /></li>
+              <li className="hover:text-[#FFC01D]"><button type="button">Sign Out</button></li>
               <li className="hover:text-[#FFC01D]"><img src={user?.picture} alt={user?.name} className="rounded-[100%] max-w-[30px]" /></li>
             </ul>
             )}
