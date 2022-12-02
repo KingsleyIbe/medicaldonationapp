@@ -1,21 +1,3 @@
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-// import { queries } from '@testing-library/react';
-import React from 'react';
-import RouterPage from './routerPage';
-
-function App() {
-  const client = new QueryClient({
-    defaultOptions: {
-      queries: {
-        refetchOnWindowFocus: false,
-      },
-    },
-  });
-  return (
-    <QueryClientProvider client={client}>
-      <RouterPage />
-    </QueryClientProvider>
-  );
-}
-
-export default App;
+version https://git-lfs.github.com/spec/v1
+oid sha256:702c3a9bb9bb9e20969944315ee3c1ebcf5103cc16cc8449aec24c76044dd794
+size 420
