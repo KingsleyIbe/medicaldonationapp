@@ -9,8 +9,10 @@ const ContactUs = () => (
     <Header />
     <div className="relative">
       <MobileHeader />
-      <Contact />
-      <Footer />
+      <div className="lg:mt-10 mt-[80px]">
+        <Contact />
+        <Footer />
+      </div>
     </div>
   </div>
 );

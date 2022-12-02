@@ -5,9 +5,11 @@ import SignIn from './SignIn';
 
 const index = () => (
   <div className="relative">
-    <Header />
     <MobileHeader />
-    <SignIn />
+    <div className="lg:mt-0 mt-[80px]">
+      <Header />
+      <SignIn />
+    </div>
   </div>
 );
 

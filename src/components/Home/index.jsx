@@ -8,8 +8,10 @@ const Home = () => (
   <div className="relative">
     <Header />
     <MobileHeader />
-    <Intro />
-    <Footer />
+    <div className="mt-[80px]">
+      <Intro />
+      <Footer />
+    </div>
   </div>
 );
 

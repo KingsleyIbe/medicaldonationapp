@@ -6,8 +6,10 @@ import SignUp from './SignUp';
 const index = () => (
   <div className="relative">
     <MobileHeader />
-    <Header />
-    <SignUp />
+    <div className="lg:mt-0 mt-[80px]">
+      <Header />
+      <SignUp />
+    </div>
   </div>
 );
 

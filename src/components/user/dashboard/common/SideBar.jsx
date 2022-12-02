@@ -23,12 +23,12 @@ const SideBar = ({ minimax }) => {
       <header className="flex fixed z-10">
         <nav
           className={`${sideBarState ? 'w-60' : 'w-0'} 
-        h-screen p-5 pt-8 bg-[#17a2b8] duration-300 z-1 relative`}
+        h-screen p-5 pt-8 bg-[#17a2b8] duration-300 relative`}
         >
           <FontAwesomeIcon
             icon={faAngleDoubleLeft}
-            className={`bg-[#A03] text-[#fff] rounded-full -right-3 border-dark-purple 
-            absolute cursor-pointer top-9 w- border-2 ${
+            className={`bg-[#A03] text-[#fff] rounded-full -right-3 z-50 border-dark-purple 
+            absolute cursor-pointer top-9 border-2 ${
               sideBarState && 'rotate-[180]'
             }`}
             onClick={() => minimax()}

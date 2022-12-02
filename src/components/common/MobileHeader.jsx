@@ -14,7 +14,7 @@ const MobileHeader = () => {
 
   return (
 
-    <div className="mobile-header fixed z-50 bg-[#fff] lg:hidden w-[100%]">
+    <div className="mobile-header top-0 fixed z-50 bg-[#fff] lg:hidden w-[100%]">
       <div className="p-5 flex flex-row justify-between item-center">
         <Link to="/" className="flex gap-2 md:gap-2 sm:gap-2 item-center">
           <span><img src={Logo} alt="Site logo" className="w-[45px] md:w-[50px] sm:w-[50px]" /></span>

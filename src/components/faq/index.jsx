@@ -8,8 +8,10 @@ const Faq = () => (
   <div>
     <Header />
     <MobileHeader />
-    <Question />
-    <Footer />
+    <div className="lg:mt-10 mt-[80px]">
+      <Question />
+      <Footer />
+    </div>
   </div>
 );
 
