@@ -96,7 +96,7 @@ const CACForm = () => {
         </form>
         <div className="mt-2 opacity-[0.5] text-center mb-[10px]">
           <p>By continuing, you agree to Life force&#39;s</p>
-          <Link to="/privacy-policy" className="text-[#4e0f0f] underline">Terms of Service and Privacy Police</Link>
+          <Link to="/policy" className="text-[#4e0f0f] underline">Terms of Service and Privacy Policy</Link>
         </div>
       </div>
       {verified ? (
