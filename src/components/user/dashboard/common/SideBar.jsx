@@ -9,7 +9,8 @@ import Logo from '../../../../assets/images/logo.png';
 import Data from './SideBarData';
 
 const SideBar = ({ minimax }) => {
-  const sideBarState = localStorage.getItem('sideBarState');
+  const sideBarState = JSON.parse(localStorage.getItem('sideBarState'));
+  console.log(sideBarState);
 
   const data = Data;
 

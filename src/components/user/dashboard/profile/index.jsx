@@ -7,17 +7,18 @@ import UserDetails from './UserDetails';
 import MobileHeader from '../../../common/MobileHeader';
 
 const RequestItem = () => {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
   const openModal = () => {
     setOpen(!open);
-    localStorage.setItem('sideBarState', open);
+    JSON.stringify(localStorage.setItem('sideBarState', open));
   };
 
+  console.log(open);
   return (
     <div className="relative">
       <MobileHeader />
       <SideBar minimax={openModal} />
-      <div className={`${open ? 'lg:ml-[265px]' : 'ml-[100px]'} `}>
+      <div className={`${open ? 'lg:ml-[100px]' : 'ml-[256px]'} `}>
         <DashboardHeader />
         <HistorySummary />
         <div className="flex flex-row gap-10 mt-10">
