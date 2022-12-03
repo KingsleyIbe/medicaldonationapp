@@ -36,7 +36,7 @@ const UserDetails = () => {
   };
 
   return (
-    <div className="w-[100%]">
+    <div className="w-[100%] pr-10">
       <div className="flex flex-row gap-10 items-center bg-[#ccc] p-5 opacity-[0.6] w-[100%]">
         <button type="button" onClick={displayForm}>Form</button>
         <button type="button" onClick={displayDocument}>Documents</button>

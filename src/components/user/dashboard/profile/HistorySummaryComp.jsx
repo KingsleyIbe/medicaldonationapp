@@ -7,7 +7,7 @@ const HistorySummaryComp = () => {
   const data = Data;
   return (
     <section className="mt-[50px] w-[98%]">
-      <div className="flex flex-col lg:flex-row w-[70%] items-center justify-between">
+      <div className="flex flex-col gap-2 lg:flex-row lg:w-[70%] w-[100%] items-center justify-between">
         {data && data.map((item) => (
           <ul key={item?.id} className="border border-1-solid p-5 rounded-[12px]">
             <li className="flex flex-row items-center justify-between text-[#17a2b8]">

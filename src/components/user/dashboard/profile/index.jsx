@@ -19,7 +19,7 @@ const RequestItem = () => {
       <div className="relative">
         <MobileHeader />
       </div>
-      <div className="mt-[80px] relative">
+      <div className="mt-[80px] lg:mt-0 relative">
         <SideBar minimax={openModal} />
         <div className={`${open ? 'lg:ml-[100px]' : 'ml-[256px]'} `}>
           <DashboardHeader />
