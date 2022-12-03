@@ -19,12 +19,12 @@ const Intro = () => (
         capacity. You can help make up for the 73.3% shortfall.
       </p>
       <span className="flex flex-row gap-[100px] mt-0 md:mt-[100px] sm:mt-[100px] lg:mt-[100px] justify-between lg:justify-start md:justify-center sm:justify-center px-5">
-        <button type="button" className="bg-[#17a2b8] text-[#fff] px-[21px] py-[12px] rounded-[8px]"> Donate and save a life</button>
+        <Link to="/sign-in"><button type="button" className="bg-[#17a2b8] text-[#fff] px-[21px] py-[12px] rounded-[8px]"> Donate and save a life</button></Link>
         <Link to="/about"><button type="button" className="bg-[#17a2b8] text-[#fff] px-[21px] py-[12px] rounded-[8px]"> Learn More</button></Link>
       </span>
     </div>
     <div className="flex lg:flex-row flex-col gap-10 lg:mt-[100px] mt-[30px] px-10">
-      <div className="flex flex-col max-h-[20%]">
+      <div className="flex flex-col max-h-[20%] mt-[100px] lg:mt-0">
         <h1 className="mb-10 text-[56px] lg:w-[500px] text-center lg:text-left font-bold">Donate and Find Donors Today</h1>
         <img src={patient1} alt="" />
       </div>
