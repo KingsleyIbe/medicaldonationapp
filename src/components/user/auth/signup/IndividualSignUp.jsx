@@ -27,6 +27,11 @@ const IndividualSignUp = () => {
     userId: uuidv4(),
   });
 
+  const [showPassword, setShowPassword] = useState(false);
+  const handleShowPassword = () => {
+    setShowPassword(!showPassword);
+  };
+
   const onChange = (e) => {
     setFormData((previousValues) => ({
       ...previousValues,
@@ -105,8 +110,8 @@ const IndividualSignUp = () => {
           <label htmlFor="password" className="w-[100%] register-input-bolder flex flex-row gap-4 items-center p-2">
             <FontAwesomeIcon icon={faHeartCirclePlus} className="opacity-[0.2]" />
             <span className="flex flex-row justify-between items-center w-[100%]">
-              <input type="password" required placeholder="Enter your password" value={formData.password} name="password" onChange={onChange} className="w-[100%]" />
-              <button type="button"><FontAwesomeIcon icon={faEye} className="opacity-[0.2]" /></button>
+              <input type={showPassword ? 'text' : 'password'} required placeholder="Enter your password" value={formData.password} name="password" onChange={onChange} className="w-[100%]" />
+              <button onClick={handleShowPassword} type="button"><FontAwesomeIcon icon={faEye} className="opacity-[0.2]" /></button>
             </span>
           </label>
           <label htmlFor="confirmPassword" className="w-[100%] register-input-bolder flex flex-row gap-4 items-center p-2">

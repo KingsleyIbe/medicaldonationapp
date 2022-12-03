@@ -17,6 +17,11 @@ const HospitalSignIn = () => {
     password: '',
   });
 
+  const [showPassword, setShowPassword] = useState(false);
+  const handleShowPassword = () => {
+    setShowPassword(!showPassword);
+  };
+
   const onChange = (e) => {
     setFormData((previousValues) => ({
       ...previousValues,
@@ -58,8 +63,8 @@ const HospitalSignIn = () => {
           <label htmlFor="password" className="w-[100%] register-input-bolder flex flex-row items-center p-2">
             <FontAwesomeIcon icon={faHeartCirclePlus} className="opacity-[0.2] mr-4" />
             <span className="flex flex-row justify-between items-center w-[100%]">
-              <input type="password" required placeholder="Enter your password" value={formData.password} name="password" onChange={onChange} className="w-[100%]" />
-              <button type="button"><FontAwesomeIcon icon={faEye} className="opacity-[0.2]" /></button>
+              <input type={showPassword ? 'text' : 'password'} required placeholder="Enter your password" value={formData.password} name="password" onChange={onChange} className="w-[100%]" />
+              <button onClick={handleShowPassword} type="button"><FontAwesomeIcon icon={faEye} className="opacity-[0.2]" /></button>
             </span>
           </label>
           <div className="text-center text-[#A03] flex flex-col">
