@@ -5,9 +5,9 @@ import SignUp from './SignUp';
 
 const index = () => (
   <div className="relative">
+    <Header />
     <MobileHeader />
-    <div className="lg:mt-0 mt-[80px]">
-      <Header />
+    <div className="mt-[80px]">
       <SignUp />
     </div>
   </div>

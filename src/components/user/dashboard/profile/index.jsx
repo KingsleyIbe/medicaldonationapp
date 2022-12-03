@@ -5,6 +5,7 @@ import SideBar from '../common/SideBar';
 import UserUpload from './UserUpload';
 import UserDetails from './UserDetails';
 import MobileHeader from '../../../common/MobileHeader';
+import Header from '../../../common/Header';
 
 const RequestItem = () => {
   const [open, setOpen] = useState(false);
@@ -13,13 +14,13 @@ const RequestItem = () => {
     JSON.stringify(localStorage.setItem('sideBarState', open));
   };
 
-  console.log(open);
   return (
     <div>
       <div className="relative">
+        <Header />
         <MobileHeader />
       </div>
-      <div className="mt-[80px] lg:mt-0 relative">
+      <div className="mt-[80px] relative">
         <SideBar minimax={openModal} />
         <div className={`${open ? 'lg:ml-[100px]' : 'ml-[256px]'} `}>
           <DashboardHeader />

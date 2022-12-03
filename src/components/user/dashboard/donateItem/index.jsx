@@ -3,9 +3,10 @@ import DashboardHeader from '../DashboardHeader';
 import SideBar from '../common/SideBar';
 import DonationCard from './DonationCard';
 import MobileHeader from '../../../common/MobileHeader';
+import Header from '../../../common/Header';
 
 const DonateItem = () => {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
   const openModal = () => {
     setOpen(!open);
     localStorage.setItem('sideBarState', open);
@@ -13,8 +14,9 @@ const DonateItem = () => {
 
   return (
     <div className="relative">
+      <Header />
       <MobileHeader />
-      <div className="lg:mt-0 mt-[80px]">
+      <div className="mt-[80px]">
         <SideBar minimax={openModal} />
         <div className={`${open ? 'lg:ml-[100px]' : 'ml-[265px]'} `}>
           <DashboardHeader />

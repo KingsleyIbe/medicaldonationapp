@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faAngleDoubleLeft, faSignOut,
 } from '@fortawesome/free-solid-svg-icons';
-import Logo from '../../../../assets/images/logo.png';
+// import Logo from '../../../../assets/images/logo.png';
 import Data from './SideBarData';
 
 const SideBar = ({ minimax }) => {
@@ -33,7 +33,8 @@ const SideBar = ({ minimax }) => {
             }`}
             onClick={() => minimax()}
           />
-          {sideBarState && (<img src={Logo} alt="Logo" className="max-w-[50px] m-auto mb-[100px]" />)}
+          {/* {sideBarState && (<img src={Logo} alt="Logo"
+          className="max-w-[50px] m-auto mb-[100px]" />)} */}
           {data && data.map((item) => (
             <ul key={item?.id} className="text-[#fff] my-5">
               <li className="hover:bg-[#fff] hover:text-[#17a2b8] hover:p-2 rounded-[12px]">
