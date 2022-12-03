@@ -36,7 +36,7 @@ const UserDetails = () => {
   };
 
   return (
-    <div className="w-[100%] pr-10">
+    <div className="w-[100%] pr-10 lg:ml-0 ml-[70px]">
       <div className="flex flex-row gap-10 items-center bg-[#ccc] p-5 opacity-[0.6] w-[100%]">
         <button type="button" onClick={displayForm}>Form</button>
         <button type="button" onClick={displayDocument}>Documents</button>
@@ -45,7 +45,7 @@ const UserDetails = () => {
       </div>
       {form && (
         <form className="mb-10 border border-solid-1 p-5">
-          <div className="flex flex-row gap-5 mb-5">
+          <div className="flex flex-col lg:flex-row gap-5 mb-5">
             <label htmlFor="firstName" className="flex flex-col">
               First Name
               <input type="text" placeholder="First Name" className="border border-1-solid rounded-[8px] px-2 py-1" />
@@ -55,7 +55,7 @@ const UserDetails = () => {
               <input type="text" placeholder="Last Name" className="border border-1-solid rounded-[8px] px-2 py-1" />
             </label>
           </div>
-          <div className="flex flex-row gap-5 mb-5">
+          <div className="flex flex-col lg:flex-row gap-5 mb-5">
             <label htmlFor="email" className="flex flex-col">
               Email
               <input type="text" placeholder="example@email.com" className="border border-1-solid rounded-[8px] px-2 py-1" />
@@ -65,7 +65,7 @@ const UserDetails = () => {
               <input type="text" placeholder="Lagos, Nigeria" className="border border-1-solid rounded-[8px] px-2 py-1" />
             </label>
           </div>
-          <div className="flex flex-row gap-5 mb-5">
+          <div className="flex flex-col lg:flex-row gap-5 mb-5">
             <label htmlFor="gender" className="flex flex-col">
               Gender
               <input type="text" placeholder="eg. male" className="border border-1-solid rounded-[8px] px-2 py-1" />
@@ -75,7 +75,7 @@ const UserDetails = () => {
               <input type="date" placeholder="eg. 31-01-2022" className="border border-1-solid rounded-[8px] px-2 py-1" />
             </label>
           </div>
-          <div className="flex flex-row gap-5 mb-5">
+          <div className="flex flex-col lg:flex-row gap-5 mb-5">
             <label htmlFor="genotype" className="flex flex-col">
               Genotype
               <input type="text" placeholder="eg. AA" className="border border-1-solid rounded-[8px] px-2 py-1" />

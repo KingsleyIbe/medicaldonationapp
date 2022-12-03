@@ -48,7 +48,7 @@ const UserUpload = () => {
   // const profileImage = JSON.parse(userImage);
 
   return (
-    <div className="border border-1-solid p-5 mb-10 w-[100%]">
+    <div className="border border-1-solid p-5 mb-10 lg:w-[100%] lg:ml-0 ml-[70px]">
       {imageUrls.length !== 0 ? (
         <div className="">
           <img src={imageUrls} alt="" className="rounded-[100%] border border-1-solid mb-5 w-[100px] h-[90px]" />
