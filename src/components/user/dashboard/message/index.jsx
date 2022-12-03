@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import DashboardHeader from '../DashboardHeader';
 import SideBar from '../common/SideBar';
+import MobileHeader from '../../../common/MobileHeader';
 
 const Message = () => {
   const [open, setOpen] = useState(true);
@@ -11,9 +12,12 @@ const Message = () => {
 
   return (
     <div className="relative">
-      <SideBar minimax={openModal} />
-      <div className={`${open ? 'lg:ml-[100px]' : 'ml-[265px]'} `}>
-        <DashboardHeader />
+      <MobileHeader />
+      <div className="mt-[80px] lg:mt-0">
+        <SideBar minimax={openModal} />
+        <div className={`${open ? 'lg:ml-[100px]' : 'ml-[265px]'} `}>
+          <DashboardHeader />
+        </div>
       </div>
     </div>
   );
