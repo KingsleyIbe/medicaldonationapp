@@ -14,21 +14,21 @@ const ContactUs = () => (
           <div className="lg:flex md:flex sm:flex flex-row gap-5">
             <label htmlFor="firstName" className="mt-10 grid text-[#17a2b8]">
               First name
-              <input type="text" name="firstName" required placeholder="First name" className="my-2 border-none contact-input p-2 rounded-[8px]" />
+              <input type="text" name="firstName" required placeholder="First name" className="my-2 text-[#000] border-none contact-input p-2 rounded-[8px]" />
             </label>
             <label htmlFor="secondName" className="grid mt-10 text-[#17a2b8]">
               Second name
-              <input type="text" name="secondName" required placeholder="Second name" className="my-2 border-none contact-input p-2 rounded-[8px]" />
+              <input type="text" name="secondName" required placeholder="Second name" className="my-2 text-[#000] border-none contact-input p-2 rounded-[8px]" />
             </label>
           </div>
           <div className="">
             <label htmlFor="email" className="grid mt-10 text-[#17a2b8]">
               Email
-              <input type="email" name="email" required placeholder="Ex example@email.com" className="my-2 border-none contact-input p-2 rounded-[8px]" />
+              <input type="email" name="email" required placeholder="Ex example@email.com" className="my-2 text-[#000] border-none contact-input p-2 rounded-[8px]" />
             </label>
             <label htmlFor="message" className="grid mt-10 text-[#17a2b8]">
               What can we help you with?
-              <textarea type="text" name="message" required placeholder="Type your message here" className="my-2 border-none contact-input p-2 rounded-[8px]" rows="8" cols="50" maxLength="200" />
+              <textarea type="text" name="message" required placeholder="Type your message here" className="my-2 text-[#000] border-none contact-input p-2 rounded-[8px]" rows="8" cols="50" maxLength="200" />
             </label>
           </div>
           <button type="submit" className="rounded-[8px] w-[150px] bg-[#17a2b8] mt-5 px-[21px] py-[12px] text-[#fff]">Send</button>

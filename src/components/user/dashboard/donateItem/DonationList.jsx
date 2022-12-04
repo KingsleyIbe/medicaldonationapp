@@ -4,7 +4,7 @@ const DonationList = () => {
   const data = localStorage.getItem('donationList') ? JSON.parse(localStorage.getItem('donationList')) : [];
 
   return (
-    <div className="overflow-x-auto w-[100%] mt-10">
+    <div className="overflow-x-auto w-[100%] px-10 mt-10">
       <div className="font-bold">
         <h1>Available Donations</h1>
       </div>

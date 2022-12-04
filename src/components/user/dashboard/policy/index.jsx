@@ -7,7 +7,9 @@ const Policy = () => (
   <div className="relative">
     <Header />
     <MobileHeader />
-    <PolicyDocs />
+    <div className="mt-[100px]">
+      <PolicyDocs />
+    </div>
   </div>
 );
 

@@ -8,8 +8,10 @@ const index = () => (
   <div className="relative">
     <Header />
     <MobileHeader />
-    <About />
-    <Footer />
+    <div className="mt-[100px]">
+      <About />
+      <Footer />
+    </div>
   </div>
 );
 

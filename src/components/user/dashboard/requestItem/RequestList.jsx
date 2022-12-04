@@ -17,7 +17,7 @@ const RequestList = () => {
             <td>LAST NAME</td>
             <td>AGE</td>
             <td>GENDER</td>
-            <td>BLOODGROUP</td>
+            <td>BLOOD GROUP</td>
             <td>LOCATION</td>
             <td>PHONE</td>
             <td>EMAIL</td>
